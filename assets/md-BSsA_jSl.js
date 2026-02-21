@@ -1,0 +1,9 @@
+import{_ as o}from"./slidev/CodeBlockWrapper.vue_vue_type_script_setup_true_lang-CZtfaZt7.js";import{o as p,b as u,w as a,g as s,d,m,ad as e,v as f,x as c,T as l}from"./modules/vue-CiIowX0D.js";import{I as g}from"./slidev/default-vREkURjy.js";import{u as k,f as x}from"./slidev/context-CbTaebRc.js";import"./modules/unplugin-icons-k-YBF64w.js";import"./index-PxqMHmTZ.js";import"./modules/shiki-Ueh41YH7.js";const T={__name:"slides.md__slidev_22",setup(b){const{$clicksContext:t,$frontmatter:i}=k();return t.setup(),(v,n)=>{const r=o;return p(),u(g,f(c(l(x)(l(i),21))),{default:a(()=>[n[1]||(n[1]=s("h1",null,"Self-Validation + Debugging Loop",-1)),n[2]||(n[2]=s("br",null,null,-1)),d(r,m({},{title:"",ranges:[]}),{default:a(()=>[...n[0]||(n[0]=[s("pre",{class:"shiki shiki-themes vitesse-dark vitesse-light slidev-code",style:{"--shiki-dark":"#dbd7caee","--shiki-light":"#393a34","--shiki-dark-bg":"#121212","--shiki-light-bg":"#ffffff"}},[s("code",{class:"language-text"},[s("span",{class:"line"},[s("span",null,"Build feature")]),e(`
+`),s("span",{class:"line"},[s("span",null,"  ↓")]),e(`
+`),s("span",{class:"line"},[s("span",null,"Run tests + manual verification → ❌ Failing")]),e(`
+`),s("span",{class:"line"},[s("span",null,"  ↓")]),e(`
+`),s("span",{class:"line"},[s("span",null,"Read error output")]),e(`
+`),s("span",{class:"line"},[s("span",null,"  ↓")]),e(`
+`),s("span",{class:"line"},[s("span",null,"Patch code")]),e(`
+`),s("span",{class:"line"},[s("span",null,"  ↓")]),e(`
+`),s("span",{class:"line"},[s("span",null,"Rerun → ✅ Green")])])],-1)])]),_:1},16),n[3]||(n[3]=s("br",null,null,-1)),n[4]||(n[4]=s("div",{class:"text-center text-xl"},[e(" The agent debugs its own mistakes."),s("br"),e(" Human reviews only "),s("span",{class:"text-green-500 font-bold"},"after validation passes"),e(". ")],-1))]),_:1},16)}}};export{T as default};
