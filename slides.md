@@ -86,6 +86,37 @@ Tell QA story. OAuth broken. Webhook broken. Copy-paste errors.
 -->
 
 ---
+layout: center
+class: text-center
+---
+
+<div class="max-w-2xl mx-auto">
+
+<div class="text-2xl mb-8">
+
+Your agent can write a feature in 4 minutes.
+
+</div>
+
+<div class="text-3xl font-bold text-yellow-400">
+
+Can you verify it in 4 minutes?
+
+</div>
+
+<div class="mt-8 text-lg text-gray-400">
+
+This talk is a practical framework for making agentic coding safe enough for daily development.
+
+</div>
+
+</div>
+
+<!--
+"That's the gap. The generation is fast. The verification isn't. This talk is about closing that gap."
+-->
+
+---
 layout: cover
 background: /img/dark-abstract.jpg
 class: text-left
@@ -189,6 +220,14 @@ Simon Willison: <span class="text-white font-semibold">"the lethal trifecta"</sp
 <!--
 Calm. Architect tone. "An agent with tool access and untrusted input isn't just powerful. It's dangerous."
 -->
+
+---
+layout: section
+---
+
+# The Model
+
+Isolation · Identity · Feedback Loops
 
 ---
 layout: cover
@@ -295,6 +334,14 @@ Visual reset. Slow down. Let the image breathe.
 -->
 
 ---
+layout: section
+---
+
+# Identity
+
+Scoped access · Separate accounts · Least privilege
+
+---
 
 # Identity
 
@@ -397,6 +444,14 @@ I started with Playwright MCP. Now I use CDP directly through a custom skill. Th
 <!--
 "Think progressive disclosure in UI design. The agent starts minimal. It loads skills on demand."
 -->
+
+---
+layout: section
+---
+
+# Feedback Loops
+
+Verification · Validation · Accountability
 
 ---
 background: /img/checklist.jpg
@@ -524,6 +579,12 @@ Structural dissent <span class="text-purple-400">by design</span>.
 -->
 
 ---
+layout: section
+---
+
+# The Payoff
+
+---
 layout: cover
 background: /img/team-dark.jpg
 class: text-center
@@ -567,16 +628,18 @@ class: text-center
 
 <div class="max-w-3xl mx-auto space-y-4 text-xl leading-relaxed">
 
-<p>AI doesn't remove responsibility. It <strong>redistributes</strong> it.</p>
+<p class="text-gray-400">Agents are powerful because they're connected.</p>
+<p class="text-gray-400">Reliability comes from environment design.</p>
 
-<p class="text-gray-400">Isolation defines where agents run.</p>
-<p class="text-gray-400">Identity defines what they're allowed to do.</p>
-<p class="text-gray-400">Feedback loops define when they're done.</p>
+<p class="text-gray-300">Isolation defines where agents run.</p>
+<p class="text-gray-300">Identity defines what they're allowed to do.</p>
+<p class="text-gray-300">Feedback loops define when they're done.</p>
 
-<div class="mt-6 text-lg text-gray-500">
+<p class="text-white text-2xl font-bold mt-4">That's how agents become teammates.</p>
 
-If you connect agents to real systems,
-you are designing their blast radius.
+<div class="mt-8 text-2xl">
+
+AI doesn't remove responsibility. It <span class="font-bold">redistributes</span> it.
 
 </div>
 
@@ -617,7 +680,13 @@ rida.me · @rida
 
 </div>
 
-<div class="mt-6 text-gray-400 text-sm">
+<div class="mt-4 text-gray-400 text-sm italic">
+
+"How can we codify our engineering culture?"
+
+</div>
+
+<div class="mt-4 text-gray-500 text-sm">
 
 BranchBox: github.com/branchbox/branchbox
 
