@@ -154,6 +154,18 @@ This talk is a practical framework for making agentic coding safe enough for dai
 -->
 
 ---
+layout: center
+class: bg-black
+---
+
+<img src="/img/harold-10k-lines.jpg" class="mx-auto max-h-96 rounded-xl shadow-2xl" />
+
+<!--
+"10K lines in 2 minutes. 2 years fixing. This is the reality without verification architecture."
+Let them laugh. Then: "This talk is about not being Harold."
+-->
+
+---
 layout: cover
 background: /img/dark-abstract.jpg
 class: text-left
@@ -679,6 +691,18 @@ class: text-center bg-black text-white
 DEMO 2: Switch to pre-recorded video.
 Show: agent pushes code → tests green → Gemini opens review → comments on edge case → build agent fixes → re-verified.
 Practice the window switch. Keep it under 90 seconds.
+-->
+
+---
+layout: center
+class: bg-black
+---
+
+<img src="/img/ai-engineer-unmasked.jpg" class="mx-auto max-h-96 rounded-xl shadow-2xl" />
+
+<!--
+"The title doesn't matter. The discipline does.
+Agents don't replace engineering rigor — they demand more of it."
 -->
 
 ---
