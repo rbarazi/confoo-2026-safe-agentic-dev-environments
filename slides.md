@@ -42,8 +42,6 @@ class: bg-black
 
 <div class="max-w-3xl mx-auto font-mono text-left">
 
-<div class="text-green-400 text-sm mb-4">claude-code v1.0.32</div>
-
 <div class="bg-gray-900 rounded-xl p-8 border border-gray-700 shadow-2xl">
 
 <div class="text-green-400 text-2xl leading-relaxed">
@@ -307,6 +305,14 @@ class: text-center
 -->
 
 ---
+layout: section
+---
+
+# Isolation
+
+Parallel environments · Zero interference
+
+---
 
 # Isolation
 
@@ -471,18 +477,6 @@ You wouldn't give a new hire:
 
 <!--
 Smile. Short beat. Move on.
--->
-
----
-layout: center
-class: bg-black
----
-
-<img src="/img/api-keys-frontend.jpg" class="mx-auto max-h-96 rounded-xl shadow-2xl" />
-
-<!--
-"This is what happens without identity boundaries. The agent doesn't know what's secret and what isn't."
-Quick beat. Move on.
 -->
 
 ---
@@ -781,51 +775,33 @@ class: text-center
 
 <div class="relative z-2">
 
-<div class="text-5xl mb-4">🙏</div>
-
 # Thank you
 
-<div class="mt-4 text-xl text-gray-300">
+<div class="mt-2 text-xl text-gray-300">
 
-**Rida Al Barazi**
-
-rida.me · @rida
+**Rida Al Barazi** · rida.me · @rida
 
 </div>
 
-<div class="mt-4 text-gray-400 text-sm italic">
+<div class="mt-2 text-gray-400 text-sm italic">
 
 "How can we codify our engineering culture?"
 
 </div>
 
-<div class="mt-4 text-gray-500 text-sm">
+<div class="grid grid-cols-2 gap-8 mt-6 items-center max-w-2xl mx-auto">
+<div class="text-left text-gray-400 text-sm space-y-1">
 
-BranchBox: github.com/branchbox/branchbox
-
-Blog: rida.me/blog
-
-</div>
+<p>BranchBox: github.com/branchbox/branchbox</p>
+<p>Blog: rida.me/blog</p>
 
 </div>
+<div>
 
----
-layout: center
-class: text-center
----
-
-# 📝 Feedback
-
-<img src="/feedback-qr.png" class="w-48 h-48 mx-auto my-6 rounded-xl shadow-2xl" alt="Feedback QR Code" />
-
-<div class="text-lg">
-
-confoo.ca/f/B1E9D3155640A9D8A5F4E90DF8874288
+<img src="/feedback-qr.png" class="w-36 h-36 mx-auto rounded-lg shadow-xl" alt="Feedback QR" />
+<div class="text-xs text-gray-500 mt-1">confoo.ca/f/B1E9…</div>
 
 </div>
-
-<div class="text-gray-400 text-sm mt-4">
-
-Your feedback helps!
+</div>
 
 </div>
