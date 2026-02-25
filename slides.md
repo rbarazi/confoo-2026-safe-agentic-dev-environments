@@ -3,17 +3,29 @@ theme: default
 title: Safe Agentic Coding
 info: |
   Environment Engineering for Reliable AI Teammates
-class: text-center
+class: text-center text-white
+background: /img/server-room.jpg
 drawings:
   persist: false
 transition: slide-left
 ---
+
+<div class="absolute inset-0 bg-black/55 z-1"></div>
+
+<div class="relative z-2">
 
 # Safe Agentic Coding
 
 ### Environment Engineering for Reliable AI Teammates
 
 Rida Al Barazi · ConFoo 2026
+
+</div>
+
+<div class="absolute bottom-8 right-8 flex items-center gap-2 z-2">
+<img src="/feedback-qr.png" class="w-24 h-24" alt="Feedback QR" />
+<span class="text-xs text-gray-400">Feedback</span>
+</div>
 
 ---
 layout: center
@@ -51,8 +63,19 @@ This isn't a prompting problem.
 It's a **trust architecture** problem.
 
 ---
+background: /img/network-cables.jpg
+class: text-white
+---
+
+<div class="absolute inset-0 bg-black/55 z-1"></div>
+
+<div class="relative z-2">
 
 # The Connected Agent Problem
+
+</div>
+
+---
 
 Agents today can:
 
@@ -66,6 +89,13 @@ Webhook payload → Stripe API → Database mutation
 Powerful model + Tool access + Untrusted input
 
 ---
+background: /img/terminal.jpg
+class: text-white
+---
+
+<div class="absolute inset-0 bg-black/60 z-1"></div>
+
+<div class="relative z-2">
 
 # The Model
 
@@ -80,6 +110,8 @@ _what it can do_
 ## Feedback Loops
 
 _how it proves itself_
+
+</div>
 
 ---
 
@@ -250,8 +282,13 @@ Clone it. Spin up a branch. See the model in action.
 
 ---
 layout: center
-class: text-center
+class: text-center text-white
+background: /img/earth-night.jpg
 ---
+
+<div class="absolute inset-0 bg-black/50 z-1"></div>
+
+<div class="relative z-2">
 
 Until containment is default,
 trust architecture is your responsibility.
@@ -266,6 +303,8 @@ Identity defines what they're allowed to do.
 
 Feedback loops define when they're done.
 
+</div>
+
 ---
 
 # The future of coding agents
@@ -275,35 +314,48 @@ Feedback loops define when they're done.
 ## It's environment engineering.
 
 ---
-
-# 🎤 Notes About This Deck
-
-- Slidev supports speaker notes using HTML comments (`<!-- -->`)
-- You can enhance it with:
-  - `layout: two-cols`
-  - Mermaid diagrams
-  - Animated fragments
-  - Live coding blocks
-- You can export to PDF or host on Vercel/GitHub Pages
-
+layout: center
+class: text-center text-white
+background: /img/code-artistic.jpg
 ---
 
-# 🚀 If You Want Next-Level
+<div class="absolute inset-0 bg-black/60 z-1"></div>
 
-We can:
+<div class="relative z-2">
 
-- Add animated fragments for pacing
-- Add Mermaid diagrams for architecture visuals
-- Add a live isolation demo slide
-- Add controlled meme slides
-- Add dark/light theme transitions for emotional beats
+# 🙏 Thank you
+
+**Rida Al Barazi**
+
+rida.me · @rida
+
+<div class="mt-4 text-gray-300 text-sm">
+
+BranchBox: github.com/branchbox/branchbox
+
+Blog posts on all of this: rida.me/blog
+
+</div>
+
+</div>
 
 ---
+layout: center
+class: text-center
+---
 
-This version is clean, technical, and ConFoo-ready.
+# 📝 Feedback
 
-Want me to:
+<img src="/feedback-qr.png" class="w-64 h-64 mx-auto my-4" alt="Feedback QR Code" />
 
-- Add tasteful meme slides?
-- Add diagram visuals?
-- Or tighten it for a 25-minute slot?
+<div class="text-lg mt-2">
+
+confoo.ca/f/DA39E62348AF40D2BBD8A4F9B51A2B00
+
+</div>
+
+<div class="text-gray-400 text-sm mt-4">
+
+Scan or visit the link — your feedback helps!
+
+</div>
