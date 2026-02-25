@@ -334,6 +334,31 @@ Visual reset. Slow down. Let the image breathe.
 -->
 
 ---
+layout: center
+class: text-center bg-black text-white
+---
+
+<div class="text-5xl mb-6">🎬</div>
+
+# Demo: Isolation in Action
+
+<div class="mt-6 text-xl text-gray-400 space-y-2">
+
+<p>Create feature branch → Spin container → Hit unique URL</p>
+<p>Agent CLI running inside the isolated environment</p>
+
+</div>
+
+<div class="mt-8 text-sm text-gray-600">~90 seconds</div>
+
+<!--
+DEMO 1: Switch to pre-recorded video.
+Show: branch create → worktree → docker compose up → tunnel → agent running inside.
+Practice the window switch. Keep it under 90 seconds.
+If video won't play, narrate over screenshots.
+-->
+
+---
 layout: section
 ---
 
@@ -576,6 +601,29 @@ Structural dissent <span class="text-purple-400">by design</span>.
 
 <!--
 "Codex builds. Gemini reviews. Different models, different blind spots. That's the point."
+-->
+
+---
+layout: center
+class: text-center bg-black text-white
+---
+
+<div class="text-5xl mb-6">🎬</div>
+
+# Demo: Cross-Agent Review
+
+<div class="mt-6 text-xl text-gray-400 space-y-2">
+
+<p>Agent runs tests → Gemini reviews PR → Build agent addresses comments</p>
+
+</div>
+
+<div class="mt-8 text-sm text-gray-600">~90 seconds</div>
+
+<!--
+DEMO 2: Switch to pre-recorded video.
+Show: agent pushes code → tests green → Gemini opens review → comments on edge case → build agent fixes → re-verified.
+Practice the window switch. Keep it under 90 seconds.
 -->
 
 ---
