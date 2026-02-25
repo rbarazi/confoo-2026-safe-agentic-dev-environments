@@ -201,17 +201,23 @@ class: text-center
 
 # The Connected Agent Problem
 
-<div class="mt-12 text-2xl space-y-4">
-
-<p>Model + Tools + Untrusted input</p>
-
-<p class="text-red-400 text-3xl font-bold">= Real blast radius</p>
-
-</div>
-
 <div class="mt-8 text-gray-400 text-lg">
 
 Simon Willison: <span class="text-white font-semibold">"the lethal trifecta"</span>
+
+</div>
+
+<div class="mt-8 text-xl space-y-4">
+
+<p>🔒 Access to <span class="text-red-400 font-bold">private data</span></p>
+<p>📨 Exposure to <span class="text-red-400 font-bold">untrusted content</span></p>
+<p>📡 Ability to <span class="text-red-400 font-bold">externally communicate</span></p>
+
+</div>
+
+<div class="mt-6 text-gray-400 text-base">
+
+Combine all three → an attacker can trick your agent into exfiltrating your data.
 
 </div>
 
