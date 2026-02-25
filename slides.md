@@ -88,6 +88,20 @@ Deadpan. One beat. Move on.
 
 ---
 layout: center
+class: bg-black
+---
+
+<img src="/img/vibe-acronym.jpg" class="mx-auto max-h-96 rounded-xl shadow-2xl" />
+
+<div class="mt-4 text-gray-500 text-sm text-center">r/vibecodingmemes</div>
+
+<!--
+Let them read it. Laugh. "Vulnerabilities In Beta Environment. That's... actually not wrong."
+Pivot: "But this talk isn't about mocking vibe coding. It's about making it safe."
+-->
+
+---
+layout: center
 class: text-center
 ---
 
@@ -459,6 +473,18 @@ You wouldn't give a new hire:
 
 <!--
 Smile. Short beat. Move on.
+-->
+
+---
+layout: center
+class: bg-black
+---
+
+<img src="/img/api-keys-frontend.jpg" class="mx-auto max-h-96 rounded-xl shadow-2xl" />
+
+<!--
+"This is what happens without identity boundaries. The agent doesn't know what's secret and what isn't."
+Quick beat. Move on.
 -->
 
 ---
