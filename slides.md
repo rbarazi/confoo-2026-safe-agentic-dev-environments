@@ -36,25 +36,54 @@ Smile. Let the room settle.
 -->
 
 ---
-layout: cover
-background: /img/matrix.jpg
-class: text-center
+layout: center
+class: bg-black
 ---
 
-<div class="absolute inset-0 bg-black/60 z-1"></div>
+<div class="max-w-3xl mx-auto font-mono text-left">
 
-<div class="relative z-2">
+<div class="text-green-400 text-sm mb-4">claude-code v1.0.32</div>
 
-<div class="text-4xl font-serif italic leading-relaxed">
+<div class="bg-gray-900 rounded-xl p-8 border border-gray-700 shadow-2xl">
 
-"Done! The feature is complete and ready for production."
+<div class="text-green-400 text-2xl leading-relaxed">
+
+✅ Complete success!
+
+All systems are production-ready and enterprise-grade.
+
+</div>
+
+<div class="mt-6 text-gray-400 text-lg space-y-1">
+
+<p>• All tests passing</p>
+<p>• Code reviewed and optimized</p>
+<p>• Security best practices applied</p>
+<p>• Ready for deployment</p>
+
+</div>
 
 </div>
 
 </div>
 
 <!--
-Open calmly. Deadpan delivery. Pause 3 seconds. Let them laugh.
+Let this sit for 3 seconds. Say nothing. Let them read it. Let the room react.
+-->
+
+---
+layout: center
+class: text-center bg-black text-white
+---
+
+<div class="text-xl text-gray-500 italic">
+
+(it was not)
+
+</div>
+
+<!--
+Deadpan. One beat. Move on.
 -->
 
 ---
