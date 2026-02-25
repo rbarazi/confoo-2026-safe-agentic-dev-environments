@@ -114,29 +114,6 @@ Confident. No hype. "This talk is about one idea: design the environment, not ju
 -->
 
 ---
-layout: center
-background: /img/retro-tech.jpg
-class: text-center
----
-
-<div class="absolute inset-0 bg-black/65 z-1"></div>
-
-<div class="relative z-2">
-
-<div class="text-8xl mb-6">🔥🐕☕🔥</div>
-
-<div class="text-3xl font-serif italic">"This is fine."</div>
-
-<div class="mt-4 text-lg text-gray-400">— every developer after "the agent handled it"</div>
-
-</div>
-
-<!--
-Quick laugh. Immediately pivot serious.
-REPLACE: swap emoji for actual meme image tonight if you want.
--->
-
----
 background: /img/terminal.jpg
 ---
 
@@ -163,11 +140,11 @@ background: /img/terminal.jpg
 </div>
 <div class="flex items-center justify-center">
 
-<div class="text-2xl font-bold text-center p-8 border-2 border-red-400/50 rounded-xl bg-red-900/20">
+<div class="text-xl font-bold text-center p-8 border-2 border-red-400/50 rounded-xl bg-red-900/20">
 
-Isolation isn't optional.
+If you're building a CLI, one env works.
 
-It's structural.
+Web apps? **Isolation is structural.**
 
 </div>
 
@@ -344,7 +321,13 @@ Visual reset. Slow down. Let the image breathe.
 </div>
 </div>
 
-<div class="mt-8 text-center text-xl">
+<div class="mt-6 text-sm text-gray-400 italic text-center">
+
+I created a separate GitHub account for my agent. My contribution graph is shrinking. Its graph is growing.
+
+</div>
+
+<div class="mt-4 text-center text-xl">
 
 Isolation protects the system. Identity protects <span class="text-yellow-400 font-bold">authority</span>.
 
@@ -397,9 +380,15 @@ agents.md          → thin, high-level
 
 <div class="text-xl mt-6">
 
-Load capability <span class="text-green-400 font-bold">only when needed</span>.
+Only load the <span class="text-green-400 font-bold">OAuth skill</span> when you're doing OAuth.
 
-Avoid context pollution.
+Only load the <span class="text-green-400 font-bold">Playwright workflow</span> when you're doing E2E.
+
+</div>
+
+<div class="mt-4 text-sm text-gray-400">
+
+I started with Playwright MCP. Now I use CDP directly through a custom skill. The tooling moves fast — the pattern matters more than the tool.
 
 </div>
 
@@ -430,11 +419,17 @@ background: /img/checklist.jpg
 
 </div>
 
+<div class="mt-6 p-4 bg-yellow-900/20 border border-yellow-500/30 rounded-lg text-center text-lg">
+
+Autonomy without verification = chaos.<br/>
+Verification without autonomy = micromanagement.
+
+</div>
+
 </div>
 
 <!--
 "You wouldn't tell a senior engineer which files to edit. You'd tell them what done looks like."
-Autonomy without verification = chaos. Verification without autonomy = micromanagement.
 -->
 
 ---
@@ -481,9 +476,10 @@ class: text-center
 
 </div>
 
-<div class="mt-8 text-lg text-green-400">
+<div class="mt-8 text-lg text-green-400 space-y-2">
 
-Nitpicking is free when agents do it.
+<p>Nitpicking is free when agents do it.</p>
+<p class="text-gray-400 text-base">That changes the economics of quality.</p>
 
 </div>
 
@@ -569,20 +565,22 @@ class: text-center
 
 <div class="relative z-2">
 
-<div class="max-w-3xl mx-auto space-y-6 text-2xl leading-relaxed">
+<div class="max-w-3xl mx-auto space-y-4 text-xl leading-relaxed">
 
-AI doesn't remove responsibility.
+<p>AI doesn't remove responsibility. It <strong>redistributes</strong> it.</p>
 
-It **redistributes** it.
+<p class="text-gray-400">Isolation defines where agents run.</p>
+<p class="text-gray-400">Identity defines what they're allowed to do.</p>
+<p class="text-gray-400">Feedback loops define when they're done.</p>
 
-<div class="mt-8 text-xl text-gray-300">
+<div class="mt-6 text-lg text-gray-500">
 
 If you connect agents to real systems,
 you are designing their blast radius.
 
 </div>
 
-<div class="mt-6 text-3xl font-bold text-green-400">
+<div class="mt-4 text-3xl font-bold text-green-400">
 
 Design it intentionally.
 
