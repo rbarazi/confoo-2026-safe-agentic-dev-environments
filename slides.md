@@ -47,13 +47,13 @@ class: text-center
 
 <div class="text-4xl font-serif italic leading-relaxed">
 
-"All tests passed."
+"Done! The feature is complete and ready for production."
 
 </div>
 
 <div class="mt-6 text-xl text-gray-400">
 
-(narrator voice: they did not)
+(narrator voice: it was not)
 
 </div>
 
