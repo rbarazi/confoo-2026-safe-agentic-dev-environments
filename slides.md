@@ -51,12 +51,6 @@ class: text-center
 
 </div>
 
-<div class="mt-6 text-xl text-gray-400">
-
-(narrator voice: it was not)
-
-</div>
-
 </div>
 
 <!--
