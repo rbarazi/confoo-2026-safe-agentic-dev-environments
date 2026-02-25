@@ -27,6 +27,37 @@ Rida Al Barazi · ConFoo 2026
 <span class="text-xs text-gray-400">Feedback</span>
 </div>
 
+<!--
+Smile. Let the room settle. "Good morning/afternoon, everyone."
+-->
+
+---
+layout: center
+class: text-center bg-black text-white
+---
+
+"All tests passed."
+
+<small class="opacity-70">(narrator voice: they did not)</small>
+
+<!--
+Open calmly. Deadpan delivery. Pause. Let them laugh.
+-->
+
+---
+layout: center
+class: text-center
+---
+
+The real bottleneck wasn't the model.
+
+It was me.
+
+<!--
+Tell QA story. OAuth broken. Webhook broken. Copy-paste errors. Frustration.
+"I was the one clicking through the app after every change. I was the one reviewing every line. I was the bottleneck."
+-->
+
 ---
 layout: center
 ---
@@ -43,35 +74,42 @@ Who can access what
 
 Who can approve what
 
----
-layout: center
----
-
-The first time I gave an agent full access to my repo,
-it felt incredible.
-
-Then it modified files outside the feature scope.
-
-**The agent didn't know what it wasn't allowed to touch.**
-
-And worse, I hadn't defined that either.
-
----
-
-This isn't a prompting problem.
-
-It's a **trust architecture** problem.
+<!--
+Confident. No hype. Shift to architecture framing.
+"This talk is about one idea: if you want agents that are reliable, you have to design the environment they work in."
+-->
 
 ---
 layout: center
+class: text-center bg-black text-white
 ---
 
-## Before: one agent, full access, shared state
+<div class="text-6xl mb-6">🔥🐕☕🔥</div>
 
-## After: isolated environments + scoped identities + verification loops
+"This is fine."
+
+<small class="opacity-70 mt-4">When the agent says "tests passed"</small>
 
 <!--
-Quick reset for the room: "This is not about better prompts. It's about making the system trustworthy by design."
+Quick laugh. Immediately pivot serious.
+REPLACE: swap emoji for actual meme image tonight if you find one you like.
+-->
+
+---
+
+# Why Web Apps Break Naive Agent Workflows
+
+- Port collisions
+- Shared localhost state
+- OAuth redirect URLs
+- Webhooks requiring public endpoints
+
+Isolation isn't optional. It's structural.
+
+<!--
+Contrast Rust CLI vs web apps. Stateful, networked systems.
+"If you're building a CLI tool, maybe you can get away with agents sharing one environment. Web apps? No chance."
+This is why architecture matters.
 -->
 
 ---
@@ -85,22 +123,14 @@ class: text-white
 
 # The Connected Agent Problem
 
+Model + Tools + Untrusted input = Real blast radius
+
 </div>
 
----
-
-Agents today can:
-
-- Write code
-- Execute commands
-- Call external APIs
-- Modify application state
-
-Webhook payload → Stripe API → Database mutation
-
-Simon Willison: **the lethal trifecta**
-
-Model + Tools + Untrusted input
+<!--
+Reference Simon Willison: "the lethal trifecta."
+Calm. Architect tone. "An agent with tool access and untrusted input isn't just powerful. It's dangerous."
+-->
 
 ---
 background: /img/terminal.jpg
@@ -111,51 +141,64 @@ class: text-white
 
 <div class="relative z-2">
 
-# The Model
+# Safe Autonomy Requires Boundaries
 
 ## Isolation
 
-_prevents interference_
+_where it runs_
 
 ## Identity
 
-_limits blast radius_
+_what it can do_
 
 ## Feedback Loops
 
-_proves correctness_
+_when it's done_
 
 </div>
+
+<!--
+This is the mental model. Return to this if lost.
+"Three pillars. Everything I'm going to show you maps back to one of these."
+-->
 
 ---
 
 # Isolation
 
 feature/login-oauth
+
 → git worktree
-→ docker compose up
+→ container
 → isolated DB
 → branch-specific URL
 
-Isolation protects boundaries.
+Isolation enables parallel autonomy.
+
+<!--
+Key phrase: Not just safety. Parallel execution. Multiple agents. No collisions.
+"Each agent gets its own branch, its own database, its own URL. They can't step on each other."
+-->
 
 ---
+layout: center
+class: text-white
+background: /img/city-night.jpg
+---
 
-# Isolation in Practice
+<div class="absolute inset-0 bg-black/45 z-1"></div>
 
-App container
-↓
-Postgres
-↓
-Tunnel → feature-x.rida.me
+<div class="relative z-2">
 
-`TUNNEL_HOST=feature-login-oauth.rida.me`
+# Parallel work.
+# No collisions.
 
-Now agents can test:
+</div>
 
-- OAuth flows
-- Webhooks
-- Full end-to-end paths
+<!--
+Visual reset. Slow down. Let the image do the work.
+"This is what isolation buys you. Three agents, three branches, zero conflicts."
+-->
 
 ---
 
@@ -165,142 +208,110 @@ Isolation protects the system.
 
 Identity protects authority.
 
----
-
-# Identity in Practice
-
-## Build Agent
-
-- Repo write
-- DB migrations
-- Stripe test key
-- Tools: `playwright`, `stripe`, `git push`
-
-## Review Agent
-
-- Read-only repo
-- No DB writes
-- No API keys
-- Tools: `rg`, `rubocop`, `eslint`, `git diff`
-
----
-
-Two isolated agents with identical credentials
-share the same blast radius.
-
 Treat agents like new hires.
 
 <!--
-Pause here.
-"You don't give interns production database access on day one.
-… unless you work at a startup."
--->
-
----
-
-# Feedback Loops
-
-Validation:
-
-- Unit tests
-- End-to-end tests
-
-Accountability:
-
-- Cross-agent review
-- Human merge
-
----
-
-An agent without verification
-is just autocomplete with confidence.
-
----
-
-# Agentic Lifecycle
-
-Spec
-→ Worktree
-→ Container
-→ Build
-→ Validate
-→ Review
-→ Merge
-
-```bash
-npx playwright test oauth-flow.spec.ts
-```
-
----
-layout: center
-class: text-center bg-black text-white
----
-
-"All tests passed."
-
-<small class="opacity-70">(narrator voice: they did not)</small>
-
-<!--
-Deadpan delivery. Quick laugh. Immediately go to bottleneck slide.
+New hire analogy. Provision accounts. Scope secrets. No shared credentials.
+"You wouldn't give a new hire the same access as a staff engineer. Why would you give it to an agent?"
 -->
 
 ---
 layout: center
-class: text-center bg-black text-white
 ---
 
-The agent finishes.
+You wouldn't give a new hire:
 
-You don't trust it.
-
-You become the bottleneck.
+- Production DB access
+- Stripe live keys
+- `rm -rf /`
 
 <!--
-Pause. Let it sit.
+Smile. Short beat. Move on.
+-->
+
+---
+
+# Skills = Progressive Disclosure
+
+Thin `agents.md`
+
+References `skills/`
+
+Load capability only when needed.
+
+Avoid context pollution.
+
+<!--
+Don't over-explain MCP. High level only.
+"Think of it like progressive disclosure in UI design. The agent starts with minimal context. It loads skills on demand."
+-->
+
+---
+
+# Definition of Done
+
+Don't prescribe the path.
+
+Define the destination.
+
+Done =
+
+- Tests pass
+- OAuth verified
+- E2E works
+- PR reviewed
+
+<!--
+Autonomy without verification = chaos.
+Verification without autonomy = micromanagement.
+This is the leadership slide.
+"You wouldn't tell a senior engineer which files to edit. You'd tell them what done looks like."
 -->
 
 ---
 
 # Self-Validation Loop
 
-Failing test
-↓
-Patch
-↓
-Rerun
-↓
-Green
+Fail → Patch → Rerun → Green
 
 Human reviews only after validation passes.
 
----
-
-# Cross-Agent Review as Architecture
-
-Single-agent workflow = one actor owns lifecycle.
-
-Human teams separate build & review.
-
-Cross-agent review = separation of concerns applied to agents.
-
-Structural dissent enforced by identity boundaries.
+<!--
+This removes you as bottleneck.
+"The agent catches its own regressions. You only see the work after it's proven."
+-->
 
 ---
+layout: center
+class: text-center
+---
 
-# Cross-Agent Review in Practice
+35 review rounds.
 
-Build agent:
-- opens PR
-- proves green (tests + e2e)
+No ego. No fatigue. No "ship it already."
 
-Review agent:
-- comments on risks + edge cases
-- suggests fixes
-Human:
-- merges
+Nitpicking is free when agents do it.
 
 <!--
-Demo cue: "Codex authored this PR. Gemini is the reviewer. Watch what it catches."
+Slow. Let them process 35.
+"I watched two agents go back and forth 35 times on a single PR. No frustration. No shortcuts. Just better code."
+-->
+
+---
+
+# Cross-Agent Review
+
+Build agent opens PR
+
+Review agent comments
+
+Loop until stable
+
+Structural dissent by design.
+
+<!--
+Fresh set of eyes. Humans get tired. Agents don't.
+"Codex builds. Gemini reviews. Different models, different blind spots. That's the point."
 -->
 
 ---
@@ -315,17 +326,9 @@ Teammates.
 
 Reliable. Accountable. Safe to collaborate with.
 
----
-
-# Reference Implementation
-
-branch → worktree → container → tunnel → agent
-
-Encoded as one abstraction.
-
-It's open source.
-
-Clone it. Spin up a branch. See the model in action.
+<!--
+Pause between lines. Let each one land.
+-->
 
 ---
 layout: center
@@ -337,28 +340,21 @@ background: /img/earth-night.jpg
 
 <div class="relative z-2">
 
-Until containment is default,
-trust architecture is your responsibility.
+AI doesn't remove responsibility.
 
-Agents are powerful because they're connected.
+It redistributes it.
 
-Reliability comes from environment design.
+If you connect agents to real systems,
+you are designing their blast radius.
 
-Isolation defines where agents run.
-
-Identity defines what they're allowed to do.
-
-Feedback loops define when they're done.
+Design it intentionally.
 
 </div>
 
----
-
-# The future of coding agents
-
-## isn't prompt engineering.
-
-## It's environment engineering.
+<!--
+Slow. Calm. Stop.
+"This is the one thing I want you to take away. You are the architect of your agents' blast radius. Design it on purpose."
+-->
 
 ---
 layout: center
@@ -370,7 +366,7 @@ background: /img/code-artistic.jpg
 
 <div class="relative z-2">
 
-# 🙏 Thank you
+# Thank you
 
 **Rida Al Barazi**
 
@@ -391,7 +387,7 @@ layout: center
 class: text-center
 ---
 
-# 📝 Feedback
+# Feedback
 
 <img src="/feedback-qr.png" class="w-64 h-64 mx-auto my-4" alt="Feedback QR Code" />
 
