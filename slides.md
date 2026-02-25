@@ -1,16 +1,16 @@
 ---
-theme: default
+theme: seriph
 title: Safe Agentic Coding
 info: |
   Environment Engineering for Reliable AI Teammates
-class: text-center text-white
+class: text-center
 background: /img/server-room.jpg
 drawings:
   persist: false
 transition: slide-left
 ---
 
-<div class="absolute inset-0 bg-black/55 z-1"></div>
+<div class="absolute inset-0 bg-gradient-to-br from-black/70 via-black/50 to-purple-900/30 z-1"></div>
 
 <div class="relative z-2">
 
@@ -18,30 +18,49 @@ transition: slide-left
 
 ### Environment Engineering for Reliable AI Teammates
 
+<div class="mt-8 text-gray-300">
+
 Rida Al Barazi · ConFoo 2026
 
 </div>
 
+</div>
+
 <div class="absolute bottom-8 right-8 flex items-center gap-2 z-2">
-<img src="/feedback-qr.png" class="w-24 h-24" alt="Feedback QR" />
+<img src="/feedback-qr.png" class="w-24 h-24 rounded-lg shadow-xl" alt="Feedback QR" />
 <span class="text-xs text-gray-400">Feedback</span>
 </div>
 
 <!--
-Smile. Let the room settle. "Good morning/afternoon, everyone."
+Smile. Let the room settle.
 -->
 
 ---
-layout: center
-class: text-center bg-black text-white
+layout: cover
+background: /img/matrix.jpg
+class: text-center
 ---
+
+<div class="absolute inset-0 bg-black/60 z-1"></div>
+
+<div class="relative z-2">
+
+<div class="text-4xl font-serif italic leading-relaxed">
 
 "All tests passed."
 
-<small class="opacity-70">(narrator voice: they did not)</small>
+</div>
+
+<div class="mt-6 text-xl text-gray-400">
+
+(narrator voice: they did not)
+
+</div>
+
+</div>
 
 <!--
-Open calmly. Deadpan delivery. Pause. Let them laugh.
+Open calmly. Deadpan delivery. Pause 3 seconds. Let them laugh.
 -->
 
 ---
@@ -49,181 +68,310 @@ layout: center
 class: text-center
 ---
 
+<div class="text-3xl leading-relaxed">
+
 The real bottleneck wasn't the model.
+
+<div class="mt-8 text-5xl font-bold text-red-400">
 
 It was me.
 
+</div>
+
+</div>
+
 <!--
-Tell QA story. OAuth broken. Webhook broken. Copy-paste errors. Frustration.
-"I was the one clicking through the app after every change. I was the one reviewing every line. I was the bottleneck."
+Tell QA story. OAuth broken. Webhook broken. Copy-paste errors.
+"I was the one clicking through the app after every change. I was the bottleneck."
 -->
 
 ---
-layout: center
+layout: cover
+background: /img/dark-abstract.jpg
+class: text-left
 ---
+
+<div class="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent z-1"></div>
+
+<div class="relative z-2 max-w-2xl">
 
 # The future of coding agents
 ## isn't prompt engineering.
 ## It's environment engineering.
 
-Environment engineering = **trust architecture**
+<div class="mt-8 text-xl text-gray-300 space-y-2">
 
-Who can run what
+<p>Who can <span class="text-green-400 font-bold">run</span> what</p>
+<p>Who can <span class="text-yellow-400 font-bold">access</span> what</p>
+<p>Who can <span class="text-red-400 font-bold">approve</span> what</p>
 
-Who can access what
+</div>
 
-Who can approve what
+</div>
 
 <!--
-Confident. No hype. Shift to architecture framing.
-"This talk is about one idea: if you want agents that are reliable, you have to design the environment they work in."
+Confident. No hype. "This talk is about one idea: design the environment, not just the prompt."
 -->
 
 ---
 layout: center
-class: text-center bg-black text-white
+background: /img/retro-tech.jpg
+class: text-center
 ---
 
-<div class="text-6xl mb-6">🔥🐕☕🔥</div>
+<div class="absolute inset-0 bg-black/65 z-1"></div>
 
-"This is fine."
+<div class="relative z-2">
 
-<small class="opacity-70 mt-4">When the agent says "tests passed"</small>
+<div class="text-8xl mb-6">🔥🐕☕🔥</div>
+
+<div class="text-3xl font-serif italic">"This is fine."</div>
+
+<div class="mt-4 text-lg text-gray-400">— every developer after "the agent handled it"</div>
+
+</div>
 
 <!--
 Quick laugh. Immediately pivot serious.
-REPLACE: swap emoji for actual meme image tonight if you find one you like.
+REPLACE: swap emoji for actual meme image tonight if you want.
 -->
 
 ---
+background: /img/terminal.jpg
+---
+
+<div class="absolute inset-0 bg-gradient-to-b from-black/70 to-black/50 z-1"></div>
+
+<div class="relative z-2">
 
 # Why Web Apps Break Naive Agent Workflows
 
-- Port collisions
-- Shared localhost state
-- OAuth redirect URLs
-- Webhooks requiring public endpoints
+<div class="grid grid-cols-2 gap-8 mt-8">
+<div>
 
-Isolation isn't optional. It's structural.
+### The Problems
+
+<div class="space-y-3 text-lg">
+
+- 🔴 Port collisions
+- 🔴 Shared localhost state
+- 🔴 OAuth redirect URLs
+- 🔴 Webhooks need public endpoints
+
+</div>
+
+</div>
+<div class="flex items-center justify-center">
+
+<div class="text-2xl font-bold text-center p-8 border-2 border-red-400/50 rounded-xl bg-red-900/20">
+
+Isolation isn't optional.
+
+It's structural.
+
+</div>
+
+</div>
+</div>
+
+</div>
 
 <!--
-Contrast Rust CLI vs web apps. Stateful, networked systems.
-"If you're building a CLI tool, maybe you can get away with agents sharing one environment. Web apps? No chance."
-This is why architecture matters.
+"If you're building a CLI tool, maybe one env works. Web apps? No chance.
+Ports collide. OAuth breaks. Webhooks need public URLs. This is why architecture matters."
 -->
 
 ---
+layout: cover
 background: /img/network-cables.jpg
-class: text-white
+class: text-center
 ---
 
-<div class="absolute inset-0 bg-black/55 z-1"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent z-1"></div>
 
 <div class="relative z-2">
 
 # The Connected Agent Problem
 
-Model + Tools + Untrusted input = Real blast radius
+<div class="mt-12 text-2xl space-y-4">
+
+<p>Model + Tools + Untrusted input</p>
+
+<p class="text-red-400 text-3xl font-bold">= Real blast radius</p>
+
+</div>
+
+<div class="mt-8 text-gray-400 text-lg">
+
+Simon Willison: <span class="text-white font-semibold">"the lethal trifecta"</span>
+
+</div>
 
 </div>
 
 <!--
-Reference Simon Willison: "the lethal trifecta."
 Calm. Architect tone. "An agent with tool access and untrusted input isn't just powerful. It's dangerous."
 -->
 
 ---
-background: /img/terminal.jpg
-class: text-white
+layout: cover
+background: /img/containers.jpg
+class: text-center
 ---
 
-<div class="absolute inset-0 bg-black/60 z-1"></div>
+<div class="absolute inset-0 bg-gradient-to-br from-blue-900/70 via-black/60 to-black/80 z-1"></div>
 
 <div class="relative z-2">
 
 # Safe Autonomy Requires Boundaries
 
-## Isolation
-
-_where it runs_
-
-## Identity
-
-_what it can do_
-
-## Feedback Loops
-
-_when it's done_
+<div class="grid grid-cols-3 gap-8 mt-12">
+<div class="p-6 bg-white/10 backdrop-blur rounded-xl">
+<div class="text-4xl mb-3">🏗️</div>
+<h3 class="text-xl font-bold">Isolation</h3>
+<p class="text-gray-300 mt-2">prevents interference</p>
+</div>
+<div class="p-6 bg-white/10 backdrop-blur rounded-xl">
+<div class="text-4xl mb-3">🔑</div>
+<h3 class="text-xl font-bold">Identity</h3>
+<p class="text-gray-300 mt-2">limits blast radius</p>
+</div>
+<div class="p-6 bg-white/10 backdrop-blur rounded-xl">
+<div class="text-4xl mb-3">✅</div>
+<h3 class="text-xl font-bold">Feedback Loops</h3>
+<p class="text-gray-300 mt-2">proves correctness</p>
+</div>
+</div>
 
 </div>
 
 <!--
-This is the mental model. Return to this if lost.
-"Three pillars. Everything I'm going to show you maps back to one of these."
+"Three pillars. Everything I show you maps back to one of these."
 -->
 
 ---
 
 # Isolation
 
-feature/login-oauth
+<div class="grid grid-cols-2 gap-12 mt-8">
+<div>
+
+<div class="text-lg space-y-3">
+
+`feature/login-oauth`
 
 → git worktree
+
 → container
+
 → isolated DB
+
 → branch-specific URL
 
-Isolation enables parallel autonomy.
+</div>
+
+<div class="mt-8 p-4 bg-green-900/30 border border-green-500/30 rounded-lg">
+
+Isolation enables **parallel autonomy**.
+
+</div>
+
+</div>
+<div class="flex items-center">
+
+```bash
+TUNNEL_HOST=feature-login-oauth.rida.me
+DATABASE_URL=postgres://…/feature_login_oauth
+PORT=3001
+```
+
+</div>
+</div>
 
 <!--
-Key phrase: Not just safety. Parallel execution. Multiple agents. No collisions.
-"Each agent gets its own branch, its own database, its own URL. They can't step on each other."
+"Each agent gets its own branch, database, URL. They can't step on each other."
 -->
 
 ---
-layout: center
-class: text-white
+layout: cover
 background: /img/city-night.jpg
+class: text-center
 ---
 
 <div class="absolute inset-0 bg-black/45 z-1"></div>
 
 <div class="relative z-2">
 
-# Parallel work.
-# No collisions.
+<div class="text-5xl font-serif leading-relaxed">
+
+Parallel work.
+
+No collisions.
+
+</div>
 
 </div>
 
 <!--
-Visual reset. Slow down. Let the image do the work.
-"This is what isolation buys you. Three agents, three branches, zero conflicts."
+Visual reset. Slow down. Let the image breathe.
+"Three agents. Three branches. Zero conflicts."
 -->
 
 ---
 
 # Identity
 
-Isolation protects the system.
+<div class="grid grid-cols-2 gap-8 mt-8">
+<div class="p-6 bg-green-900/20 border border-green-500/30 rounded-xl">
 
-Identity protects authority.
+### 🔨 Build Agent
 
-Treat agents like new hires.
+- Repo write
+- DB migrations
+- Stripe test key
+- `playwright` · `git push`
+
+</div>
+<div class="p-6 bg-blue-900/20 border border-blue-500/30 rounded-xl">
+
+### 👁️ Review Agent
+
+- Read-only repo
+- No DB writes
+- No API keys
+- `rg` · `rubocop` · `git diff`
+
+</div>
+</div>
+
+<div class="mt-8 text-center text-xl">
+
+Isolation protects the system. Identity protects <span class="text-yellow-400 font-bold">authority</span>.
+
+</div>
 
 <!--
-New hire analogy. Provision accounts. Scope secrets. No shared credentials.
-"You wouldn't give a new hire the same access as a staff engineer. Why would you give it to an agent?"
+"You wouldn't give a new hire the same access as a staff engineer."
 -->
 
 ---
 layout: center
+class: text-center
 ---
+
+<div class="text-2xl leading-relaxed">
 
 You wouldn't give a new hire:
 
-- Production DB access
-- Stripe live keys
-- `rm -rf /`
+</div>
+
+<div class="mt-8 space-y-4 text-3xl">
+
+<p>🗄️ Production DB access</p>
+<p>💳 Stripe live keys</p>
+<p class="text-red-400 font-mono">🔥 rm -rf /</p>
+
+</div>
 
 <!--
 Smile. Short beat. Move on.
@@ -233,52 +381,88 @@ Smile. Short beat. Move on.
 
 # Skills = Progressive Disclosure
 
-Thin `agents.md`
+<div class="mt-8 space-y-6">
 
-References `skills/`
+<div class="p-4 bg-gray-800/50 rounded-lg font-mono text-lg">
 
-Load capability only when needed.
+```
+agents.md          → thin, high-level
+  └── skills/      → loaded on demand
+       ├── deploy/
+       ├── test/
+       └── review/
+```
+
+</div>
+
+<div class="text-xl mt-6">
+
+Load capability <span class="text-green-400 font-bold">only when needed</span>.
 
 Avoid context pollution.
 
+</div>
+
+</div>
+
 <!--
-Don't over-explain MCP. High level only.
-"Think of it like progressive disclosure in UI design. The agent starts with minimal context. It loads skills on demand."
+"Think progressive disclosure in UI design. The agent starts minimal. It loads skills on demand."
 -->
 
 ---
+background: /img/checklist.jpg
+---
+
+<div class="absolute inset-0 bg-gradient-to-r from-black/85 to-black/50 z-1"></div>
+
+<div class="relative z-2">
 
 # Definition of Done
 
-Don't prescribe the path.
+<div class="text-xl mt-4 text-gray-300">Don't prescribe the path. Define the destination.</div>
 
-Define the destination.
+<div class="mt-8 space-y-3 text-xl">
 
-Done =
+<p>✅ Tests pass</p>
+<p>✅ OAuth verified</p>
+<p>✅ E2E works</p>
+<p>✅ PR reviewed</p>
 
-- Tests pass
-- OAuth verified
-- E2E works
-- PR reviewed
+</div>
+
+</div>
 
 <!--
-Autonomy without verification = chaos.
-Verification without autonomy = micromanagement.
-This is the leadership slide.
 "You wouldn't tell a senior engineer which files to edit. You'd tell them what done looks like."
+Autonomy without verification = chaos. Verification without autonomy = micromanagement.
 -->
 
 ---
 
 # Self-Validation Loop
 
-Fail → Patch → Rerun → Green
+<div class="flex justify-center mt-12">
+<div class="space-y-4 text-center">
+
+<div class="text-2xl p-4 bg-red-900/30 rounded-lg">❌ Fail</div>
+<div class="text-3xl">↓</div>
+<div class="text-2xl p-4 bg-yellow-900/30 rounded-lg">🔧 Patch</div>
+<div class="text-3xl">↓</div>
+<div class="text-2xl p-4 bg-blue-900/30 rounded-lg">🔄 Rerun</div>
+<div class="text-3xl">↓</div>
+<div class="text-2xl p-4 bg-green-900/30 rounded-lg">✅ Green</div>
+
+</div>
+</div>
+
+<div class="mt-8 text-center text-lg text-gray-400">
 
 Human reviews only after validation passes.
 
+</div>
+
 <!--
-This removes you as bottleneck.
-"The agent catches its own regressions. You only see the work after it's proven."
+"The agent catches its own regressions. You only see work after it's proven."
 -->
 
 ---
@@ -286,97 +470,160 @@ layout: center
 class: text-center
 ---
 
-35 review rounds.
+<div class="text-7xl font-bold text-white">35</div>
 
-No ego. No fatigue. No "ship it already."
+<div class="text-2xl mt-4 text-gray-300">review rounds.</div>
+
+<div class="mt-8 text-xl space-y-2 text-gray-400">
+
+<p>No ego. No fatigue.</p>
+<p>No "ship it already."</p>
+
+</div>
+
+<div class="mt-8 text-lg text-green-400">
 
 Nitpicking is free when agents do it.
 
+</div>
+
 <!--
 Slow. Let them process 35.
-"I watched two agents go back and forth 35 times on a single PR. No frustration. No shortcuts. Just better code."
+"I watched two agents go 35 rounds on a single PR. No frustration. No shortcuts. Just better code."
 -->
 
 ---
 
 # Cross-Agent Review
 
-Build agent opens PR
+<div class="grid grid-cols-3 gap-6 mt-8">
+<div class="p-5 bg-blue-900/20 border border-blue-500/30 rounded-xl text-center">
+<div class="text-3xl mb-3">🔨</div>
+<h3 class="font-bold">Build Agent</h3>
+<p class="text-sm text-gray-400 mt-2">Opens PR</p>
+<p class="text-sm text-gray-400">Proves green</p>
+</div>
+<div class="p-5 bg-purple-900/20 border border-purple-500/30 rounded-xl text-center">
+<div class="text-3xl mb-3">🔍</div>
+<h3 class="font-bold">Review Agent</h3>
+<p class="text-sm text-gray-400 mt-2">Comments on risks</p>
+<p class="text-sm text-gray-400">Suggests fixes</p>
+</div>
+<div class="p-5 bg-green-900/20 border border-green-500/30 rounded-xl text-center">
+<div class="text-3xl mb-3">👤</div>
+<h3 class="font-bold">Human</h3>
+<p class="text-sm text-gray-400 mt-2">Final call</p>
+<p class="text-sm text-gray-400">Merges</p>
+</div>
+</div>
 
-Review agent comments
+<div class="mt-8 text-center text-xl">
 
-Loop until stable
+Structural dissent <span class="text-purple-400">by design</span>.
 
-Structural dissent by design.
+</div>
 
 <!--
-Fresh set of eyes. Humans get tired. Agents don't.
 "Codex builds. Gemini reviews. Different models, different blind spots. That's the point."
 -->
 
 ---
+layout: cover
+background: /img/team-dark.jpg
+class: text-center
+---
 
-# The Payoff
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-black/40 z-1"></div>
 
-Not autocomplete.
+<div class="relative z-2">
 
-Not chaos.
+<div class="space-y-6 text-3xl font-serif">
 
-Teammates.
+<p>Not autocomplete.</p>
+
+<p>Not chaos.</p>
+
+<p class="text-4xl font-bold text-white mt-4">Teammates.</p>
+
+</div>
+
+<div class="mt-8 text-xl text-gray-300">
 
 Reliable. Accountable. Safe to collaborate with.
+
+</div>
+
+</div>
 
 <!--
 Pause between lines. Let each one land.
 -->
 
 ---
-layout: center
-class: text-center text-white
+layout: cover
 background: /img/earth-night.jpg
+class: text-center
 ---
 
-<div class="absolute inset-0 bg-black/50 z-1"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black/80 z-1"></div>
 
 <div class="relative z-2">
 
+<div class="max-w-3xl mx-auto space-y-6 text-2xl leading-relaxed">
+
 AI doesn't remove responsibility.
 
-It redistributes it.
+It **redistributes** it.
+
+<div class="mt-8 text-xl text-gray-300">
 
 If you connect agents to real systems,
 you are designing their blast radius.
+
+</div>
+
+<div class="mt-6 text-3xl font-bold text-green-400">
 
 Design it intentionally.
 
 </div>
 
+</div>
+
+</div>
+
 <!--
 Slow. Calm. Stop.
-"This is the one thing I want you to take away. You are the architect of your agents' blast radius. Design it on purpose."
+"This is the one takeaway. You are the architect of your agents' blast radius."
 -->
 
 ---
-layout: center
-class: text-center text-white
+layout: cover
 background: /img/code-artistic.jpg
+class: text-center
 ---
 
-<div class="absolute inset-0 bg-black/60 z-1"></div>
+<div class="absolute inset-0 bg-gradient-to-br from-black/70 to-purple-900/30 z-1"></div>
 
 <div class="relative z-2">
 
+<div class="text-5xl mb-4">🙏</div>
+
 # Thank you
+
+<div class="mt-4 text-xl text-gray-300">
 
 **Rida Al Barazi**
 
 rida.me · @rida
 
-<div class="mt-4 text-gray-300 text-sm">
+</div>
+
+<div class="mt-6 text-gray-400 text-sm">
 
 BranchBox: github.com/branchbox/branchbox
 
-Blog posts on all of this: rida.me/blog
+Blog: rida.me/blog
 
 </div>
 
@@ -387,11 +634,11 @@ layout: center
 class: text-center
 ---
 
-# Feedback
+# 📝 Feedback
 
-<img src="/feedback-qr.png" class="w-64 h-64 mx-auto my-4" alt="Feedback QR Code" />
+<img src="/feedback-qr.png" class="w-48 h-48 mx-auto my-6 rounded-xl shadow-2xl" alt="Feedback QR Code" />
 
-<div class="text-lg mt-2">
+<div class="text-lg">
 
 confoo.ca/f/B1E9D3155640A9D8A5F4E90DF8874288
 
@@ -399,6 +646,6 @@ confoo.ca/f/B1E9D3155640A9D8A5F4E90DF8874288
 
 <div class="text-gray-400 text-sm mt-4">
 
-Scan or visit the link — your feedback helps!
+Your feedback helps!
 
 </div>
