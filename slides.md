@@ -32,8 +32,8 @@ layout: center
 ---
 
 # The future of coding agents
-## isn't prompt engineering —
-## it's environment engineering.
+## isn't prompt engineering.
+## It's environment engineering.
 
 Environment engineering = **trust architecture**
 
@@ -54,13 +54,25 @@ Then it modified files outside the feature scope.
 
 **The agent didn't know what it wasn't allowed to touch.**
 
-And worse — I hadn't defined that either.
+And worse, I hadn't defined that either.
 
 ---
 
 This isn't a prompting problem.
 
 It's a **trust architecture** problem.
+
+---
+layout: center
+---
+
+## Before: one agent, full access, shared state
+
+## After: isolated environments + scoped identities + verification loops
+
+<!--
+Quick reset for the room: "This is not about better prompts. It's about making the system trustworthy by design."
+-->
 
 ---
 background: /img/network-cables.jpg
@@ -86,7 +98,9 @@ Agents today can:
 
 Webhook payload → Stripe API → Database mutation
 
-Powerful model + Tool access + Untrusted input
+Simon Willison: **the lethal trifecta**
+
+Model + Tools + Untrusted input
 
 ---
 background: /img/terminal.jpg
@@ -101,15 +115,15 @@ class: text-white
 
 ## Isolation
 
-_where it runs_
+_prevents interference_
 
 ## Identity
 
-_what it can do_
+_limits blast radius_
 
 ## Feedback Loops
 
-_how it proves itself_
+_proves correctness_
 
 </div>
 
@@ -135,6 +149,8 @@ Postgres
 ↓
 Tunnel → feature-x.rida.me
 
+`TUNNEL_HOST=feature-login-oauth.rida.me`
+
 Now agents can test:
 
 - OAuth flows
@@ -157,13 +173,15 @@ Identity protects authority.
 
 - Repo write
 - DB migrations
-- Test API keys
+- Stripe test key
+- Tools: `playwright`, `stripe`, `git push`
 
 ## Review Agent
 
 - Read-only repo
 - No DB writes
 - No API keys
+- Tools: `rg`, `rubocop`, `eslint`, `git diff`
 
 ---
 
@@ -218,6 +236,19 @@ layout: center
 class: text-center bg-black text-white
 ---
 
+"All tests passed."
+
+<small class="opacity-70">(narrator voice: they did not)</small>
+
+<!--
+Deadpan delivery. Quick laugh. Immediately go to bottleneck slide.
+-->
+
+---
+layout: center
+class: text-center bg-black text-white
+---
+
 The agent finishes.
 
 You don't trust it.
@@ -252,9 +283,25 @@ Human teams separate build & review.
 
 Cross-agent review = separation of concerns applied to agents.
 
-Codex builds. Gemini reviews.
-
 Structural dissent enforced by identity boundaries.
+
+---
+
+# Cross-Agent Review in Practice
+
+Build agent:
+- opens PR
+- proves green (tests + e2e)
+
+Review agent:
+- comments on risks + edge cases
+- suggests fixes
+Human:
+- merges
+
+<!--
+Demo cue: "Codex authored this PR. Gemini is the reviewer. Watch what it catches."
+-->
 
 ---
 
