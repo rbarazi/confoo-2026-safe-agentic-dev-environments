@@ -32,7 +32,9 @@ Rida Al Barazi · ConFoo 2026
 </div>
 
 <!--
-Smile. Let the room settle.
+[Smile. Let the room settle. Don't rush. Wait until the chatter dies down.]
+
+No preamble. This audience is warmed up. They've been at ConFoo for a day. They've seen the Kiro keynote. They've sat through MCP talks. Respect that.
 -->
 
 ---
@@ -66,7 +68,9 @@ All systems are production-ready and enterprise-grade.
 </div>
 
 <!--
-Let this sit for 3 seconds. Say nothing. Let them read it. Let the room react.
+[Say nothing. Let them read it. Hold for 3 full seconds.]
+
+They'll recognize it. Every developer in this room has seen this exact output from their agent.
 -->
 
 ---
@@ -81,7 +85,11 @@ class: text-center bg-black text-white
 </div>
 
 <!--
-Deadpan. One beat. Move on.
+[Deadpan. Don't smile yet.]
+
+"It was not."
+
+[Let them laugh. Don't step on it. Then advance.]
 -->
 
 ---
@@ -102,8 +110,17 @@ It was me.
 </div>
 
 <!--
-Tell QA story. OAuth broken. Webhook broken. Copy-paste errors.
-"I was the one clicking through the app after every change. I was the bottleneck."
+[This is YOUR story. Personal. Vulnerable.]
+
+"I've been working with coding agents for about a year now. Real features. Real APIs. Real OAuth flows."
+
+"And this kept happening. The agent finishes. I open the browser. OAuth redirect broken. Webhook not firing. Four working components that didn't work together."
+
+"The model wasn't the bottleneck."
+
+[Pause.]
+
+"I was. I had become the slow QA person. The agent did the fun part — writing the code. And I was the one clicking through the app after every change, copy-pasting errors back, getting frustrated."
 -->
 
 ---
@@ -134,7 +151,13 @@ This talk is a practical framework for making agentic coding safe enough for dai
 </div>
 
 <!--
-"That's the gap. The generation is fast. The verification isn't. This talk is about closing that gap."
+[Pivot from YOUR problem to THEIR problem.]
+
+"That's not just my story. Your agent can write a feature in 4 minutes. Can you verify it in 4 minutes?"
+
+"The best engineering teams are as good as their environment allows. That was true before AI."
+
+"This talk is a practical framework for closing that gap."
 -->
 
 ---
@@ -145,8 +168,11 @@ class: bg-black
 <img src="/img/harold-10k-lines.jpg" class="mx-auto max-h-96 rounded-xl shadow-2xl" />
 
 <!--
-"10K lines in 2 minutes. 2 years fixing. This is the reality without verification architecture."
-Let them laugh. Then: "This talk is about not being Harold."
+[Let them see it. Let them laugh.]
+
+"That feeling right there? That's what happens when generation outpaces verification."
+
+[Advance immediately to thesis. Don't linger. Don't name the meme.]
 -->
 
 ---
@@ -174,7 +200,15 @@ class: text-left
 </div>
 
 <!--
-Confident. No hype. "This talk is about one idea: design the environment, not just the prompt."
+[Confident. Slow. This is your anchor.]
+
+"The future of coding agents isn't prompt engineering. It's environment engineering."
+
+"And to be clear — this is not a DevOps talk. This is about trust architecture."
+
+"Who can run what. Who can access what. Who can approve what."
+
+"Everything I show you today maps back to those three questions."
 -->
 
 ---
@@ -218,8 +252,13 @@ Web apps? **Isolation is structural.**
 </div>
 
 <!--
-"If you're building a CLI tool, maybe one env works. Web apps? No chance.
-Ports collide. OAuth breaks. Webhooks need public URLs. This is why architecture matters."
+"Now — if you're building a Rust CLI, this is easy. Different folder, different binary, done."
+
+"But most of us here are building web systems. Stateful. Networked. Callback-driven."
+
+"OAuth requires a real redirect URL. Webhooks require a public endpoint. You can't just mock everything and pretend that's enough."
+
+"If you want an agent to verify an OAuth flow end-to-end, it has to run against a real, reachable URL. That's when isolation stops being a nice-to-have."
 -->
 
 ---
@@ -250,23 +289,23 @@ Simon Willison: <span class="text-white font-semibold">"the lethal trifecta"</sp
 
 <div class="mt-6 text-gray-400 text-base">
 
-Combine all three → an attacker can trick your agent into exfiltrating your data.
+Combine all three → your agent becomes an attack surface.
 
 </div>
 
 </div>
 
 <!--
-Calm. Architect tone. "An agent with tool access and untrusted input isn't just powerful. It's dangerous."
+[Shift to architect tone. Calm. Serious.]
+
+"Simon Willison has this framing he calls the lethal trifecta."
+
+"Access to private data. Exposure to untrusted content. And the ability to externally communicate."
+
+"Put those three together and your agent becomes an attack surface. That's not theoretical — that's the actual threat model."
+
+"So how do we make this safe?"
 -->
-
----
-layout: section
----
-
-# The Model
-
-Isolation · Identity · Feedback Loops
 
 ---
 layout: cover
@@ -301,7 +340,9 @@ class: text-center
 </div>
 
 <!--
-"Three pillars. Everything I show you maps back to one of these."
+"Three structural controls. Isolation prevents interference. Identity limits blast radius. Feedback loops prove correctness."
+
+"These are not prompt tweaks. These are architectural decisions. Everything I show you from here maps to one of these three."
 -->
 
 ---
@@ -311,6 +352,10 @@ layout: section
 # Isolation
 
 Parallel environments · Zero interference
+
+<!--
+[Transition. Keep it moving.]
+-->
 
 ---
 
@@ -352,7 +397,21 @@ PORT=3001
 </div>
 
 <!--
-"Each agent gets its own branch, database, URL. They can't step on each other."
+[This is where the parenting analogy lives. Deliver it warmly, not as a lecture.]
+
+"One thing I learned as a parent: if you want to stop saying 'no' all the time, you manage the environment. Hide the candy. Childproof the cabinets. Once the environment is safe, you can say yes to almost everything."
+
+"AI agents are the same way. The problem wasn't the model. It was their environment."
+
+"Isolation means: git worktree per feature, dev container per worktree, isolated Postgres, branch-specific URL. So feature/login-oauth doesn't share a database with feature/stripe-webhook."
+
+"No port collisions. No localhost assumptions. No agent installing random Node versions on my machine. Everything is ephemeral."
+
+"And that's what enables safe YOLO mode."
+
+[Pause.]
+
+"Isolation isn't about paranoia. It's about enabling autonomy without collateral damage."
 -->
 
 ---
@@ -376,8 +435,11 @@ No collisions.
 </div>
 
 <!--
-Visual reset. Slow down. Let the image breathe.
+[Hold 3 seconds. Don't narrate beyond one line.]
+
 "Three agents. Three branches. Zero conflicts."
+
+[Advance.]
 -->
 
 ---
@@ -401,8 +463,12 @@ class: text-center bg-black text-white
 <!--
 DEMO 1: Switch to pre-recorded video.
 Show: branch create → worktree → docker compose up → tunnel → agent running inside.
-Practice the window switch. Keep it under 90 seconds.
-If video won't play, narrate over screenshots.
+
+[Say almost nothing while it plays. Let it breathe. Under 90 seconds.]
+
+"That's isolation. One command, one environment, completely disposable."
+
+[If video won't play, narrate over the slide text.]
 -->
 
 ---
@@ -412,6 +478,10 @@ layout: section
 # Identity
 
 Scoped access · Separate accounts · Least privilege
+
+<!--
+[Transition.]
+-->
 
 ---
 
@@ -453,7 +523,17 @@ Isolation protects the system. Identity protects <span class="text-yellow-400 fo
 </div>
 
 <!--
-"You wouldn't give a new hire the same access as a staff engineer."
+"The second boundary is identity. And I think this is the one people underappreciate."
+
+"Think about onboarding a new engineer. You don't give them your credentials. You provision access — GitHub, Slack, ticketing, secrets — and you scope it."
+
+"My build agent has repo write access, migration permissions, Stripe test keys. My review agent? Read-only. No DB writes. No API keys."
+
+"I actually created a separate GitHub account for my agent. It opens PRs as itself. My contribution graph is shrinking. Its contribution graph is growing. Now I'm orchestrating. It's executing. That shift matters."
+
+"Isolation protects the system. Identity protects authority."
+
+[Q&A prep: if someone asks about GitHub ToS, it's a machine user account — same as a CI bot.]
 -->
 
 ---
@@ -476,7 +556,15 @@ You wouldn't give a new hire:
 </div>
 
 <!--
-Smile. Short beat. Move on.
+[Smile. Let each line land.]
+
+"You wouldn't give a new hire production database access. You wouldn't hand them live Stripe keys."
+
+[Gesture at rm -rf.]
+
+"So why are we giving agents all of our credentials?"
+
+[Short beat. Move on.]
 -->
 
 ---
@@ -507,14 +595,22 @@ Only load the <span class="text-green-400 font-bold">Playwright workflow</span> 
 
 <div class="mt-4 text-sm text-gray-400">
 
-I started with Playwright MCP. Now I use CDP directly through a custom skill. The tooling moves fast — the pattern matters more than the tool.
+I started with Playwright MCP. Now I use Chrome DevTools Protocol (CDP) directly through a custom skill. The tooling moves fast — the pattern matters more than the tool.
 
 </div>
 
 </div>
 
 <!--
-"Think progressive disclosure in UI design. The agent starts minimal. It loads skills on demand."
+"Another lesson I learned: context gets polluted fast."
+
+"I had this massive agents.md file. It explained everything. Loaded every time into the context window. Not sustainable."
+
+"So I moved toward progressive disclosure. Thin core file. Referenced skills. Only load the OAuth testing skill when you're doing OAuth. Only load the Playwright workflow when you're doing E2E."
+
+"I started with Playwright MCP for browser testing. Now I'm using Chrome DevTools Protocol — CDP — directly through a custom skill. You literally just run Chrome and open up the protocol, and the agent can control the browser directly. The tooling moves fast — what matters is the pattern, not the specific tool."
+
+"This isn't just context optimization. It's modular architecture for reasoning."
 -->
 
 ---
@@ -524,6 +620,10 @@ layout: section
 # Feedback Loops
 
 Verification · Validation · Accountability
+
+<!--
+[Transition.]
+-->
 
 ---
 background: /img/checklist.jpg
@@ -556,7 +656,19 @@ Verification without autonomy = micromanagement.
 </div>
 
 <!--
+[Call back to the opening. This is a key moment.]
+
+"Remember that checklist from the opening? The agent wrote that one. 'Production-ready and enterprise-grade.'"
+
+"This checklist? You write this one. That's the difference."
+
+"Done means: the tests pass. The OAuth handshake works end-to-end. The E2E flow completes. The PR is reviewed."
+
 "You wouldn't tell a senior engineer which files to edit. You'd tell them what done looks like."
+
+[Pause.]
+
+"Autonomy without verification is chaos. Verification without autonomy is micromanagement. Safe autonomy lives in the middle."
 -->
 
 ---
@@ -584,7 +696,13 @@ Human reviews only after validation passes.
 </div>
 
 <!--
-"The agent catches its own regressions. You only see work after it's proven."
+"Once the environment supports it, the agent can: fail, patch, rerun, repeat."
+
+"Now I'm not manually clicking through flows. I'm reviewing outcomes."
+
+"The agent catches its own regressions. You only see work after it's proven itself."
+
+"Human reviews only after validation passes. That's the deal."
 -->
 
 ---
@@ -611,8 +729,13 @@ class: text-center
 </div>
 
 <!--
-Slow. Let them process 35.
-"I watched two agents go 35 rounds on a single PR. No frustration. No shortcuts. Just better code."
+[Say "35." Then STOP. Full 3 seconds of silence. Let them process the number.]
+
+"Thirty-five. I would have stopped at three."
+
+"Think about how many times we brush off nitpicky feedback just to get things moving. How many times we accept 'good enough' because we're tired and we want to ship."
+
+"Agents don't get tired. Nitpicking is free when agents do it. That changes the economics of quality."
 -->
 
 ---
@@ -648,6 +771,12 @@ Structural dissent <span class="text-purple-400">by design</span>.
 
 <!--
 "Codex builds. Gemini reviews. Different models, different blind spots. That's the point."
+
+"Each model reads the code differently and falls into different mistakes. Claude approaches problems differently than Codex. Two different agents, two different identities. That's why cross-agent review works."
+
+"I use Gemini's free code review feature — install it on GitHub, comment /gemini review. My build agent has the GitHub CLI, so it fetches those comments and addresses them in a loop."
+
+"This is separation of concerns applied to agents. We already do this on human teams. Same principle. Structural dissent by design."
 -->
 
 ---
@@ -669,20 +798,11 @@ class: text-center bg-black text-white
 
 <!--
 DEMO 2: Switch to pre-recorded video.
-Show: agent pushes code → tests green → Gemini opens review → comments on edge case → build agent fixes → re-verified.
-Practice the window switch. Keep it under 90 seconds.
--->
+Show: agent pushes → tests green → Gemini reviews → comments on edge case → build agent fixes → re-verified.
 
----
-layout: center
-class: bg-black
----
+[Keep it under 90 seconds. Practice the window switch.]
 
-<img src="/img/ai-engineer-unmasked.jpg" class="mx-auto max-h-96 rounded-xl shadow-2xl" />
-
-<!--
-"The title doesn't matter. The discipline does.
-Agents don't replace engineering rigor — they demand more of it."
+"That's the loop. Build, review, fix, verify. No human in the middle until it's clean."
 -->
 
 ---
@@ -690,6 +810,18 @@ layout: section
 ---
 
 # The Payoff
+
+<!--
+[This is your energy bridge. Before advancing, deliver this verbally:]
+
+"We are as productive as our environment allows. That was true before AI."
+
+"The best engineering teams were the ones with good local setup, strong verification, clean review culture. AI doesn't change that. It amplifies it."
+
+"If your environment is chaotic, agents amplify chaos. If your environment encodes boundaries, agents amplify quality."
+
+[Then advance.]
+-->
 
 ---
 layout: cover
@@ -720,7 +852,19 @@ Reliable. Accountable. Safe to collaborate with.
 </div>
 
 <!--
-Pause between lines. Let each one land.
+[Pause between each line. Let each one land.]
+
+"Not autocomplete."
+
+[Beat.]
+
+"Not chaos."
+
+[Beat.]
+
+"Teammates."
+
+"Reliable. Accountable. Safe to collaborate with."
 -->
 
 ---
@@ -744,13 +888,46 @@ class: text-center
 
 <p class="text-white text-2xl font-bold mt-4">That's how agents become teammates.</p>
 
-<div class="mt-8 text-2xl">
+</div>
+
+</div>
+
+<!--
+[Deliver from memory if you can. Eyes on the room, not the screen. Slow. One line at a time.]
+
+"Agents are powerful because they're connected."
+"Reliability comes from environment design."
+
+"Isolation defines where agents run."
+"Identity defines what they're allowed to do."
+"Feedback loops define when they're done."
+
+[Pause.]
+
+"That's how agents become teammates."
+
+[Hold. Then advance.]
+-->
+
+---
+layout: cover
+background: /img/earth-night.jpg
+class: text-center
+---
+
+<div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/70 to-black/90 z-1"></div>
+
+<div class="relative z-2">
+
+<div class="max-w-3xl mx-auto">
+
+<div class="text-2xl leading-relaxed">
 
 AI doesn't remove responsibility. It <span class="font-bold">redistributes</span> it.
 
 </div>
 
-<div class="mt-4 text-3xl font-bold text-green-400">
+<div class="mt-8 text-3xl font-bold text-green-400">
 
 Design it intentionally.
 
@@ -761,8 +938,15 @@ Design it intentionally.
 </div>
 
 <!--
-Slow. Calm. Stop.
-"This is the one takeaway. You are the architect of your agents' blast radius."
+"AI doesn't remove responsibility. It redistributes it."
+
+"When you connect agents to real systems, you are designing their blast radius."
+
+[Pause.]
+
+"Design it intentionally."
+
+[Hold. Nod. Done.]
 -->
 
 ---
@@ -805,3 +989,15 @@ class: text-center
 </div>
 
 </div>
+
+<!--
+"Thank you."
+
+[Don't rush. Let them clap.]
+
+"If you want to try this model, BranchBox is open source. The blog has the details."
+
+"And if you have a minute, the feedback QR is right there — it genuinely helps."
+
+[Leave this slide up during Q&A.]
+-->
