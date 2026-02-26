@@ -17,23 +17,23 @@ fonts:
   italic: true
 ---
 
-<div class="absolute inset-0 bg-gradient-to-br from-black/80 via-black/60 to-indigo-900/20 z-1"></div>
+<div class="absolute inset-0 bg-gradient-to-br from-black/90 via-black/75 to-indigo-950/40 z-1"></div>
 
 <div class="relative z-2 flex flex-col items-center justify-center h-full">
 
-<h1 class="!text-6xl !font-light tracking-tight !leading-tight !mb-0">Safe Agentic Coding</h1>
+<h1 class="!text-6xl !font-light tracking-tight !leading-tight !mb-0 text-white drop-shadow-lg">Safe Agentic Coding</h1>
 
-<p class="text-xl text-white/50 mt-6 font-light tracking-wide">Environment Engineering for Reliable AI Teammates</p>
+<p class="text-xl text-white/80 mt-6 font-light tracking-wide drop-shadow-md">Environment Engineering for Reliable AI Teammates</p>
 
-<div class="mt-16 text-white/30 text-sm tracking-[0.2em] uppercase">
+<div class="mt-16 text-white/50 text-sm tracking-[0.2em] uppercase">
 Rida Al Barazi · ConFoo 2026
 </div>
 
 </div>
 
 <div class="absolute bottom-10 right-10 flex items-center gap-3 z-2">
-<img src="/feedback-qr.png" class="w-20 h-20 rounded-lg opacity-70" alt="Feedback QR" />
-<span class="text-[11px] text-white/25">Feedback</span>
+<img src="/feedback-qr.png" class="w-20 h-20 rounded-lg opacity-80" alt="Feedback QR" />
+<span class="text-[11px] text-white/40">Feedback</span>
 </div>
 
 <!--
@@ -44,27 +44,43 @@ No preamble. This audience is warmed up. They've been at ConFoo for a day. They'
 
 ---
 layout: center
-class: bg-[#080808]
+class: bg-[#0c0c0c]
 ---
 
-<div class="max-w-2xl mx-auto font-mono text-left">
+<div class="max-w-2xl mx-auto text-left">
 
-<div class="rounded-2xl p-10 border border-white/8 bg-white/[0.02]">
+<div class="rounded-xl overflow-hidden shadow-2xl border border-white/[0.08]">
 
-<div class="text-emerald-400 text-xl leading-relaxed">
-
-✅ Complete success!
-
-All systems are production-ready and enterprise-grade.
-
+<!-- Terminal title bar -->
+<div class="bg-[#1a1a1a] px-4 py-3 flex items-center gap-2">
+<div class="flex gap-1.5">
+<div class="w-3 h-3 rounded-full bg-[#ff5f57]"></div>
+<div class="w-3 h-3 rounded-full bg-[#febc2e]"></div>
+<div class="w-3 h-3 rounded-full bg-[#28c840]"></div>
+</div>
+<div class="text-white/30 text-xs font-mono ml-3">~/project — claude-code</div>
 </div>
 
-<div class="mt-8 text-white/30 text-base space-y-2">
+<!-- Terminal body -->
+<div class="bg-[#0e0e0e] p-8 font-mono text-sm leading-loose">
 
-<p>• All tests passing</p>
-<p>• Code reviewed and optimized</p>
-<p>• Security best practices applied</p>
-<p>• Ready for deployment</p>
+<div class="text-white/40">$ claude "implement the login feature"</div>
+
+<div class="mt-6 text-white/50">⠋ Working...</div>
+
+<div class="mt-6 text-emerald-400 text-base">
+✓ Complete success!<br/>
+All systems are production-ready and enterprise-grade.
+</div>
+
+<div class="mt-4 text-white/30 space-y-0.5">
+<div>  ✓ All tests passing</div>
+<div>  ✓ Code reviewed and optimized</div>
+<div>  ✓ Security best practices applied</div>
+<div>  ✓ Ready for deployment</div>
+</div>
+
+<div class="mt-6 text-white/20">$<span class="animate-pulse ml-1">▊</span></div>
 
 </div>
 
