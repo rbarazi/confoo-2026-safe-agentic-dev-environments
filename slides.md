@@ -8,25 +8,32 @@ background: /img/server-room.jpg
 drawings:
   persist: false
 transition: slide-left
+fonts:
+  sans: Inter
+  serif: Playfair Display
+  mono: JetBrains Mono
+  provider: google
+  weights: '300,400,500,600,700'
+  italic: true
 ---
 
 <div class="absolute inset-0 bg-gradient-to-br from-black/80 via-black/60 to-indigo-900/20 z-1"></div>
 
 <div class="relative z-2 flex flex-col items-center justify-center h-full">
 
-<h1 class="!text-5xl !font-light tracking-tight">Safe Agentic Coding</h1>
+<h1 class="!text-6xl !font-light tracking-tight !leading-tight !mb-0">Safe Agentic Coding</h1>
 
-<p class="text-xl text-white/60 mt-4 font-light tracking-wide">Environment Engineering for Reliable AI Teammates</p>
+<p class="text-xl text-white/50 mt-6 font-light tracking-wide">Environment Engineering for Reliable AI Teammates</p>
 
-<div class="mt-12 text-white/40 text-sm tracking-widest uppercase">
+<div class="mt-16 text-white/30 text-sm tracking-[0.2em] uppercase">
 Rida Al Barazi · ConFoo 2026
 </div>
 
 </div>
 
-<div class="absolute bottom-8 right-8 flex items-center gap-3 z-2">
-<img src="/feedback-qr.png" class="w-20 h-20 rounded-lg opacity-80" alt="Feedback QR" />
-<span class="text-xs text-white/30">Feedback</span>
+<div class="absolute bottom-10 right-10 flex items-center gap-3 z-2">
+<img src="/feedback-qr.png" class="w-20 h-20 rounded-lg opacity-70" alt="Feedback QR" />
+<span class="text-[11px] text-white/25">Feedback</span>
 </div>
 
 <!--
@@ -37,14 +44,14 @@ No preamble. This audience is warmed up. They've been at ConFoo for a day. They'
 
 ---
 layout: center
-class: bg-[#0a0a0a]
+class: bg-[#080808]
 ---
 
-<div class="max-w-3xl mx-auto font-mono text-left">
+<div class="max-w-2xl mx-auto font-mono text-left">
 
-<div class="rounded-xl p-8 border border-white/10 bg-white/[0.03]">
+<div class="rounded-2xl p-10 border border-white/8 bg-white/[0.02]">
 
-<div class="text-emerald-400 text-2xl leading-relaxed font-medium">
+<div class="text-emerald-400 text-xl leading-relaxed">
 
 ✅ Complete success!
 
@@ -52,7 +59,7 @@ All systems are production-ready and enterprise-grade.
 
 </div>
 
-<div class="mt-6 text-white/40 text-lg space-y-1">
+<div class="mt-8 text-white/30 text-base space-y-2">
 
 <p>• All tests passing</p>
 <p>• Code reviewed and optimized</p>
@@ -73,10 +80,10 @@ They'll recognize it. Every developer in this room has seen this exact output fr
 
 ---
 layout: center
-class: text-center bg-[#0a0a0a]
+class: text-center bg-[#080808]
 ---
 
-<div class="text-xl text-white/30 italic font-light">
+<div class="text-lg text-white/25 italic font-light">
 
 (it was not)
 
@@ -95,15 +102,11 @@ layout: center
 class: text-center
 ---
 
-<div class="text-2xl leading-relaxed text-white/70 font-light">
+<div class="max-w-xl mx-auto">
 
-The real bottleneck wasn't the model.
+<p class="text-2xl text-white/50 font-light leading-relaxed">The real bottleneck wasn't the model.</p>
 
-<div class="mt-10 text-5xl font-bold text-white">
-
-It was me.
-
-</div>
+<p class="text-5xl font-semibold text-white mt-12">It was me.</p>
 
 </div>
 
@@ -126,25 +129,13 @@ layout: center
 class: text-center
 ---
 
-<div class="max-w-2xl mx-auto">
+<div class="max-w-xl mx-auto">
 
-<div class="text-2xl text-white/60 font-light">
+<p class="text-xl text-white/50 font-light">Your agent can write a feature in 4 minutes.</p>
 
-Your agent can write a feature in 4 minutes.
+<p class="text-3xl font-semibold text-amber-400 mt-10">Can you verify it in 4 minutes?</p>
 
-</div>
-
-<div class="text-3xl font-semibold text-amber-400 mt-8">
-
-Can you verify it in 4 minutes?
-
-</div>
-
-<div class="mt-10 text-lg text-white/40 font-light leading-relaxed">
-
-This talk is a practical framework for making agentic coding<br/>safe enough for daily development.
-
-</div>
+<p class="mt-14 text-base text-white/30 font-light leading-relaxed max-w-md mx-auto">This talk is a practical framework for making agentic coding safe enough for daily development.</p>
 
 </div>
 
@@ -160,10 +151,10 @@ This talk is a practical framework for making agentic coding<br/>safe enough for
 
 ---
 layout: center
-class: bg-[#0a0a0a]
+class: bg-[#080808]
 ---
 
-<img src="/img/harold-10k-lines.jpg" class="mx-auto max-h-96 rounded-xl" />
+<img src="/img/harold-10k-lines.jpg" class="mx-auto max-h-[400px] rounded-2xl" />
 
 <!--
 [Let them see it. Let them laugh.]
@@ -179,17 +170,17 @@ background: /img/dark-abstract.jpg
 class: text-left
 ---
 
-<div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-transparent z-1"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-transparent z-1"></div>
 
 <div class="relative z-2 max-w-2xl">
 
-<h1 class="!text-4xl !font-light !leading-snug">
+<h1 class="!text-[2.5rem] !font-light !leading-snug !mb-0">
 The future of coding agents<br/>
 <span class="!font-semibold">isn't prompt engineering.</span><br/>
 <span class="!font-semibold">It's environment engineering.</span>
 </h1>
 
-<div class="mt-10 text-xl text-white/50 space-y-3 font-light">
+<div class="mt-14 text-lg text-white/40 space-y-4 font-light">
 
 <p>Who can <span class="text-emerald-400 font-medium">run</span> what</p>
 <p>Who can <span class="text-amber-400 font-medium">access</span> what</p>
@@ -215,16 +206,16 @@ The future of coding agents<br/>
 background: /img/terminal.jpg
 ---
 
-<div class="absolute inset-0 bg-gradient-to-b from-black/80 to-black/60 z-1"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-black/85 to-black/65 z-1"></div>
 
 <div class="relative z-2">
 
 # Why Web Apps Break Naive Agent Workflows
 
-<div class="grid grid-cols-2 gap-12 mt-8">
+<div class="grid grid-cols-2 gap-16 mt-12">
 <div>
 
-<div class="space-y-4 text-lg text-white/70">
+<div class="space-y-5 text-lg text-white/60 font-light">
 
 - Port collisions
 - Shared localhost state
@@ -236,10 +227,10 @@ background: /img/terminal.jpg
 </div>
 <div class="flex items-center justify-center">
 
-<div class="text-lg text-center p-8 border border-white/10 rounded-xl bg-white/[0.03]">
+<div class="text-base text-center p-10 border border-white/8 rounded-2xl bg-white/[0.02]">
 
-<p class="text-white/50">If you're building a CLI, one env works.</p>
-<p class="text-white font-medium mt-3">Web apps? Isolation is structural.</p>
+<p class="text-white/40 font-light">If you're building a CLI, one env works.</p>
+<p class="text-white font-medium mt-4">Web apps? Isolation is structural.</p>
 
 </div>
 
@@ -264,19 +255,15 @@ background: /img/network-cables.jpg
 class: text-center
 ---
 
-<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/65 to-black/40 z-1"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/70 to-black/50 z-1"></div>
 
 <div class="relative z-2">
 
-<h1 class="!font-light">The Connected Agent Problem</h1>
+<h1 class="!font-light !mb-0">The Connected Agent Problem</h1>
 
-<div class="mt-4 text-white/40 text-lg font-light">
+<p class="mt-4 text-white/35 text-base font-light">Simon Willison · <span class="text-white/60">"the lethal trifecta"</span></p>
 
-Simon Willison · <span class="text-white/70 font-normal">"the lethal trifecta"</span>
-
-</div>
-
-<div class="mt-10 text-xl space-y-5 text-white/70">
+<div class="mt-14 text-xl space-y-6 text-white/60 font-light">
 
 <p>Access to <span class="text-rose-400 font-medium">private data</span></p>
 <p>Exposure to <span class="text-rose-400 font-medium">untrusted content</span></p>
@@ -284,11 +271,7 @@ Simon Willison · <span class="text-white/70 font-normal">"the lethal trifecta"<
 
 </div>
 
-<div class="mt-8 text-white/30 text-base font-light">
-
-Combine all three → your agent becomes an attack surface.
-
-</div>
+<p class="mt-12 text-white/25 text-sm font-light">Combine all three → your agent becomes an attack surface.</p>
 
 </div>
 
@@ -310,24 +293,24 @@ background: /img/containers.jpg
 class: text-center
 ---
 
-<div class="absolute inset-0 bg-gradient-to-br from-indigo-900/50 via-black/70 to-black/85 z-1"></div>
+<div class="absolute inset-0 bg-gradient-to-br from-indigo-900/40 via-black/70 to-black/90 z-1"></div>
 
 <div class="relative z-2">
 
-<h1 class="!font-light">Safe Autonomy Requires Boundaries</h1>
+<h1 class="!font-light !mb-0">Safe Autonomy Requires Boundaries</h1>
 
-<div class="grid grid-cols-3 gap-8 mt-14">
-<div class="p-6 bg-white/[0.04] backdrop-blur rounded-xl border border-white/[0.06]">
-<h3 class="text-xl font-semibold text-emerald-400">Isolation</h3>
-<p class="text-white/40 mt-3 font-light">prevents interference</p>
+<div class="grid grid-cols-3 gap-10 mt-16">
+<div class="p-8 bg-white/[0.03] backdrop-blur rounded-2xl border border-white/[0.05]">
+<h3 class="text-lg font-semibold text-emerald-400 !uppercase !tracking-wide">Isolation</h3>
+<p class="text-white/35 mt-4 font-light text-sm">prevents interference</p>
 </div>
-<div class="p-6 bg-white/[0.04] backdrop-blur rounded-xl border border-white/[0.06]">
-<h3 class="text-xl font-semibold text-amber-400">Identity</h3>
-<p class="text-white/40 mt-3 font-light">limits blast radius</p>
+<div class="p-8 bg-white/[0.03] backdrop-blur rounded-2xl border border-white/[0.05]">
+<h3 class="text-lg font-semibold text-amber-400 !uppercase !tracking-wide">Identity</h3>
+<p class="text-white/35 mt-4 font-light text-sm">limits blast radius</p>
 </div>
-<div class="p-6 bg-white/[0.04] backdrop-blur rounded-xl border border-white/[0.06]">
-<h3 class="text-xl font-semibold text-rose-400">Feedback Loops</h3>
-<p class="text-white/40 mt-3 font-light">proves correctness</p>
+<div class="p-8 bg-white/[0.03] backdrop-blur rounded-2xl border border-white/[0.05]">
+<h3 class="text-lg font-semibold text-rose-400 !uppercase !tracking-wide">Feedback Loops</h3>
+<p class="text-white/35 mt-4 font-light text-sm">proves correctness</p>
 </div>
 </div>
 
@@ -343,11 +326,11 @@ class: text-center
 layout: section
 ---
 
-<div class="text-emerald-400 font-light tracking-wide">Part I</div>
+<div class="text-emerald-400/80 font-light tracking-[0.15em] text-sm uppercase">Part I</div>
 
 # Isolation
 
-<div class="text-white/40 font-light mt-2">Parallel environments · Zero interference</div>
+<div class="text-white/30 font-light mt-3 text-lg">Parallel environments · Zero interference</div>
 
 <!--
 [Transition. Keep it moving.]
@@ -357,10 +340,10 @@ layout: section
 
 # Isolation
 
-<div class="grid grid-cols-2 gap-12 mt-8">
+<div class="grid grid-cols-2 gap-16 mt-12">
 <div>
 
-<div class="text-lg space-y-3 text-white/70 font-light">
+<div class="text-lg space-y-4 text-white/60 font-light">
 
 `feature/login-oauth`
 
@@ -374,9 +357,9 @@ layout: section
 
 </div>
 
-<div class="mt-8 p-4 bg-emerald-500/[0.08] border border-emerald-500/20 rounded-lg">
+<div class="mt-10 p-5 bg-emerald-500/[0.06] border border-emerald-500/15 rounded-xl">
 
-<span class="text-emerald-400 font-medium">Isolation enables parallel autonomy.</span>
+<span class="text-emerald-400/90 font-medium text-sm">Isolation enables parallel autonomy.</span>
 
 </div>
 
@@ -416,11 +399,11 @@ background: /img/city-night.jpg
 class: text-center
 ---
 
-<div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70 z-1"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/75 z-1"></div>
 
 <div class="relative z-2 flex items-center justify-center h-full">
 
-<div class="text-4xl font-light leading-loose tracking-tight text-white/90">
+<div class="text-4xl font-light leading-loose tracking-tight text-white/80">
 
 Parallel work.<br/>No collisions.
 
@@ -438,21 +421,21 @@ Parallel work.<br/>No collisions.
 
 ---
 layout: center
-class: text-center bg-[#0a0a0a]
+class: text-center bg-[#080808]
 ---
 
-<div class="text-white/20 text-sm uppercase tracking-widest mb-6">Demo</div>
+<div class="text-white/15 text-xs uppercase tracking-[0.2em] mb-8">Demo</div>
 
 # Isolation in Action
 
-<div class="mt-8 text-lg text-white/40 font-light space-y-2">
+<div class="mt-10 text-base text-white/35 font-light space-y-3 leading-relaxed">
 
 <p>Create feature branch → Spin container → Hit unique URL</p>
 <p>Agent CLI running inside the isolated environment</p>
 
 </div>
 
-<div class="mt-10 text-sm text-white/20">~90 seconds</div>
+<div class="mt-12 text-xs text-white/15">~90 seconds</div>
 
 <!--
 DEMO 1: Switch to pre-recorded video.
@@ -469,11 +452,11 @@ Show: branch create → worktree → docker compose up → tunnel → agent runn
 layout: section
 ---
 
-<div class="text-amber-400 font-light tracking-wide">Part II</div>
+<div class="text-amber-400/80 font-light tracking-[0.15em] text-sm uppercase">Part II</div>
 
 # Identity
 
-<div class="text-white/40 font-light mt-2">Scoped access · Separate accounts · Least privilege</div>
+<div class="text-white/30 font-light mt-3 text-lg">Scoped access · Separate accounts · Least privilege</div>
 
 <!--
 [Transition.]
@@ -483,12 +466,12 @@ layout: section
 
 # Identity
 
-<div class="grid grid-cols-2 gap-8 mt-8">
-<div class="p-6 bg-white/[0.03] border border-white/[0.06] rounded-xl">
+<div class="grid grid-cols-2 gap-10 mt-12">
+<div class="p-8 bg-white/[0.02] border border-white/[0.05] rounded-2xl">
 
-### Build Agent
+<h3 class="!text-sm !tracking-wide text-emerald-400/80">Build Agent</h3>
 
-<div class="text-white/50 mt-4 space-y-2 font-light">
+<div class="text-white/45 mt-5 space-y-3 font-light text-[15px]">
 
 - Repo write access
 - DB migrations
@@ -498,11 +481,11 @@ layout: section
 </div>
 
 </div>
-<div class="p-6 bg-white/[0.03] border border-white/[0.06] rounded-xl">
+<div class="p-8 bg-white/[0.02] border border-white/[0.05] rounded-2xl">
 
-### Review Agent
+<h3 class="!text-sm !tracking-wide text-sky-400/80">Review Agent</h3>
 
-<div class="text-white/50 mt-4 space-y-2 font-light">
+<div class="text-white/45 mt-5 space-y-3 font-light text-[15px]">
 
 - Read-only repo
 - No DB writes
@@ -514,17 +497,9 @@ layout: section
 </div>
 </div>
 
-<div class="mt-8 text-sm text-white/30 italic text-center font-light">
+<p class="mt-10 text-sm text-white/25 italic text-center font-light leading-relaxed">I created a separate GitHub account for my agent. My contribution graph is shrinking. Its graph is growing.</p>
 
-I created a separate GitHub account for my agent.<br/>My contribution graph is shrinking. Its graph is growing.
-
-</div>
-
-<div class="mt-4 text-center text-lg text-white/70">
-
-Isolation protects the system. Identity protects <span class="text-amber-400 font-medium">authority</span>.
-
-</div>
+<p class="mt-4 text-center text-base text-white/60">Isolation protects the system. Identity protects <span class="text-amber-400 font-medium">authority</span>.</p>
 
 <!--
 "The second boundary is identity. And I think this is the one people underappreciate."
@@ -545,17 +520,17 @@ layout: center
 class: text-center
 ---
 
-<div class="text-2xl text-white/50 font-light leading-relaxed">
+<div class="max-w-md mx-auto">
 
-You wouldn't give a new hire
+<p class="text-xl text-white/40 font-light">You wouldn't give a new hire</p>
 
-</div>
-
-<div class="mt-10 space-y-5 text-2xl text-white/70">
+<div class="mt-12 space-y-6 text-2xl text-white/60">
 
 <p>Production DB access</p>
 <p>Stripe live keys</p>
-<p class="font-mono text-rose-400">rm -rf /</p>
+<p class="font-mono text-rose-400/80">rm -rf /</p>
+
+</div>
 
 </div>
 
@@ -575,9 +550,9 @@ You wouldn't give a new hire
 
 # Skills = Progressive Disclosure
 
-<div class="mt-8 space-y-6">
+<div class="mt-12">
 
-<div class="p-6 bg-white/[0.03] rounded-xl border border-white/[0.06] font-mono text-lg text-white/60">
+<div class="p-8 bg-white/[0.02] rounded-2xl border border-white/[0.05] font-mono text-base text-white/50 leading-loose">
 
 ```
 agents.md          → thin, high-level
@@ -589,19 +564,14 @@ agents.md          → thin, high-level
 
 </div>
 
-<div class="text-xl mt-8 text-white/70 font-light">
+<div class="text-lg mt-10 text-white/60 font-light leading-relaxed">
 
-Only load the <span class="text-emerald-400 font-medium">OAuth skill</span> when you're doing OAuth.
-
+Only load the <span class="text-emerald-400 font-medium">OAuth skill</span> when you're doing OAuth.<br/>
 Only load the <span class="text-emerald-400 font-medium">Playwright workflow</span> when you're doing E2E.
 
 </div>
 
-<div class="mt-6 text-sm text-white/30 font-light">
-
-I started with Playwright MCP. Now I use Chrome DevTools Protocol (CDP) directly through a custom skill. The tooling moves fast — the pattern matters more than the tool.
-
-</div>
+<p class="mt-8 text-sm text-white/25 font-light leading-relaxed">I started with Playwright MCP. Now I use Chrome DevTools Protocol directly through a custom skill. The tooling moves fast — the pattern matters more than the tool.</p>
 
 </div>
 
@@ -621,11 +591,11 @@ I started with Playwright MCP. Now I use Chrome DevTools Protocol (CDP) directly
 layout: section
 ---
 
-<div class="text-rose-400 font-light tracking-wide">Part III</div>
+<div class="text-rose-400/80 font-light tracking-[0.15em] text-sm uppercase">Part III</div>
 
 # Feedback Loops
 
-<div class="text-white/40 font-light mt-2">Verification · Validation · Accountability</div>
+<div class="text-white/30 font-light mt-3 text-lg">Verification · Validation · Accountability</div>
 
 <!--
 [Transition.]
@@ -635,15 +605,15 @@ layout: section
 background: /img/checklist.jpg
 ---
 
-<div class="absolute inset-0 bg-gradient-to-r from-black/90 to-black/60 z-1"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-black/92 to-black/65 z-1"></div>
 
 <div class="relative z-2">
 
 # Definition of Done
 
-<div class="text-lg mt-4 text-white/40 font-light">Don't prescribe the path. Define the destination.</div>
+<p class="text-base mt-2 text-white/35 font-light">Don't prescribe the path. Define the destination.</p>
 
-<div class="mt-10 space-y-4 text-xl text-white/70 font-light">
+<div class="mt-14 space-y-5 text-xl text-white/60 font-light">
 
 <p>Tests pass</p>
 <p>OAuth verified end-to-end</p>
@@ -671,13 +641,13 @@ layout: center
 class: text-center
 ---
 
-<div class="max-w-2xl mx-auto space-y-8">
+<div class="max-w-xl mx-auto space-y-10">
 
-<div class="text-2xl text-rose-400/80 font-light">Autonomy without verification — chaos.</div>
+<p class="text-xl text-rose-400/70 font-light">Autonomy without verification — chaos.</p>
 
-<div class="text-2xl text-amber-400/80 font-light">Verification without autonomy — micromanagement.</div>
+<p class="text-xl text-amber-400/70 font-light">Verification without autonomy — micromanagement.</p>
 
-<div class="text-2xl font-medium text-emerald-400 mt-6">Safe autonomy lives in the middle.</div>
+<p class="text-2xl font-medium text-emerald-400 mt-4">Safe autonomy lives in the middle.</p>
 
 </div>
 
@@ -697,41 +667,37 @@ class: text-center
 
 # Self-Validation Loop
 
-<div class="flex justify-center mt-12">
-<div class="flex items-center gap-6">
+<div class="flex justify-center mt-16">
+<div class="flex items-center gap-8">
 
-<div class="text-lg p-5 bg-rose-500/[0.08] rounded-xl border border-rose-500/15 text-center w-32">
-<div class="text-rose-400 font-medium">Fail</div>
+<div class="p-6 bg-rose-500/[0.06] rounded-2xl border border-rose-500/10 text-center w-28">
+<p class="text-rose-400/80 font-medium text-sm">Fail</p>
 </div>
 
-<div class="text-white/20 text-2xl">→</div>
+<div class="text-white/15 text-xl">→</div>
 
-<div class="text-lg p-5 bg-amber-500/[0.08] rounded-xl border border-amber-500/15 text-center w-32">
-<div class="text-amber-400 font-medium">Patch</div>
+<div class="p-6 bg-amber-500/[0.06] rounded-2xl border border-amber-500/10 text-center w-28">
+<p class="text-amber-400/80 font-medium text-sm">Patch</p>
 </div>
 
-<div class="text-white/20 text-2xl">→</div>
+<div class="text-white/15 text-xl">→</div>
 
-<div class="text-lg p-5 bg-sky-500/[0.08] rounded-xl border border-sky-500/15 text-center w-32">
-<div class="text-sky-400 font-medium">Rerun</div>
+<div class="p-6 bg-sky-500/[0.06] rounded-2xl border border-sky-500/10 text-center w-28">
+<p class="text-sky-400/80 font-medium text-sm">Rerun</p>
 </div>
 
-<div class="text-white/20 text-2xl">→</div>
+<div class="text-white/15 text-xl">→</div>
 
-<div class="text-lg p-5 bg-emerald-500/[0.08] rounded-xl border border-emerald-500/15 text-center w-32">
-<div class="text-emerald-400 font-medium">Green?</div>
+<div class="p-6 bg-emerald-500/[0.06] rounded-2xl border border-emerald-500/10 text-center w-28">
+<p class="text-emerald-400/80 font-medium text-sm">Green?</p>
 </div>
 
 </div>
 </div>
 
-<div class="text-center mt-6 text-white/30 text-sm italic font-light">repeat until green</div>
+<p class="text-center mt-8 text-white/20 text-xs italic font-light tracking-wide">repeat until green</p>
 
-<div class="mt-8 text-center text-lg text-white/50 font-light">
-
-Human reviews only after the loop exits green.
-
-</div>
+<p class="mt-10 text-center text-base text-white/40 font-light">Human reviews only after the loop exits green.</p>
 
 <!--
 "The agent fails. Patches. Reruns. And if it's still red? Back around. Fail, patch, rerun. Again."
@@ -746,24 +712,21 @@ layout: center
 class: text-center
 ---
 
-<div class="text-8xl font-extralight text-white tracking-tight">35</div>
+<div class="text-[7rem] font-extralight text-white tracking-tight leading-none">35</div>
 
-<div class="text-xl mt-4 text-white/40 font-light">review rounds.</div>
+<div class="text-lg mt-6 text-white/35 font-light">review rounds.</div>
 
-<div class="mt-10 text-lg space-y-2 text-white/30 font-light">
+<div class="mt-14 text-base space-y-3 text-white/25 font-light">
 
 <p>No ego. No fatigue.</p>
 <p>No "ship it already."</p>
 
 </div>
 
-<div class="mt-10 text-lg text-emerald-400/80 font-light">
-
-Nitpicking is free when agents do it.
-
+<div class="mt-12">
+<p class="text-base text-emerald-400/70 font-light">Nitpicking is free when agents do it.</p>
+<p class="text-white/25 text-sm mt-2 font-light">That changes the economics of quality.</p>
 </div>
-
-<div class="text-white/30 text-sm mt-1 font-light">That changes the economics of quality.</div>
 
 <!--
 [Say "35." Then STOP. Full 3 seconds of silence. Let them process the number.]
@@ -779,35 +742,31 @@ Nitpicking is free when agents do it.
 
 # Cross-Agent Review
 
-<div class="grid grid-cols-3 gap-6 mt-10">
-<div class="p-6 bg-white/[0.03] border border-white/[0.06] rounded-xl text-center">
-<h3 class="font-semibold text-emerald-400">Build Agent</h3>
-<div class="text-sm text-white/40 mt-3 space-y-1 font-light">
+<div class="grid grid-cols-3 gap-8 mt-14">
+<div class="p-8 bg-white/[0.02] border border-white/[0.05] rounded-2xl text-center">
+<h3 class="!text-sm !tracking-wide text-emerald-400/80">Build Agent</h3>
+<div class="text-sm text-white/35 mt-5 space-y-2 font-light">
 <p>Opens PR</p>
 <p>Proves green</p>
 </div>
 </div>
-<div class="p-6 bg-white/[0.03] border border-white/[0.06] rounded-xl text-center">
-<h3 class="font-semibold text-amber-400">Review Agent</h3>
-<div class="text-sm text-white/40 mt-3 space-y-1 font-light">
+<div class="p-8 bg-white/[0.02] border border-white/[0.05] rounded-2xl text-center">
+<h3 class="!text-sm !tracking-wide text-amber-400/80">Review Agent</h3>
+<div class="text-sm text-white/35 mt-5 space-y-2 font-light">
 <p>Comments on risks</p>
 <p>Suggests fixes</p>
 </div>
 </div>
-<div class="p-6 bg-white/[0.03] border border-white/[0.06] rounded-xl text-center">
-<h3 class="font-semibold text-white/80">Human</h3>
-<div class="text-sm text-white/40 mt-3 space-y-1 font-light">
+<div class="p-8 bg-white/[0.02] border border-white/[0.05] rounded-2xl text-center">
+<h3 class="!text-sm !tracking-wide text-white/60">Human</h3>
+<div class="text-sm text-white/35 mt-5 space-y-2 font-light">
 <p>Final call</p>
 <p>Merges</p>
 </div>
 </div>
 </div>
 
-<div class="mt-10 text-center text-xl text-white/60 font-light">
-
-Structural dissent <span class="text-amber-400 font-medium">by design</span>.
-
-</div>
+<p class="mt-12 text-center text-lg text-white/50 font-light">Structural dissent <span class="text-amber-400 font-medium">by design</span>.</p>
 
 <!--
 "Codex builds. Gemini reviews. Different models, different blind spots. That's the point."
@@ -821,20 +780,20 @@ Structural dissent <span class="text-amber-400 font-medium">by design</span>.
 
 ---
 layout: center
-class: text-center bg-[#0a0a0a]
+class: text-center bg-[#080808]
 ---
 
-<div class="text-white/20 text-sm uppercase tracking-widest mb-6">Demo</div>
+<div class="text-white/15 text-xs uppercase tracking-[0.2em] mb-8">Demo</div>
 
 # Cross-Agent Review
 
-<div class="mt-8 text-lg text-white/40 font-light space-y-2">
+<div class="mt-10 text-base text-white/35 font-light leading-relaxed">
 
-<p>Agent runs tests → Gemini reviews PR → Build agent addresses comments</p>
+Agent runs tests → Gemini reviews PR → Build agent addresses comments
 
 </div>
 
-<div class="mt-10 text-sm text-white/20">~90 seconds</div>
+<div class="mt-12 text-xs text-white/15">~90 seconds</div>
 
 <!--
 DEMO 2: Switch to pre-recorded video.
@@ -869,25 +828,21 @@ background: /img/team-dark.jpg
 class: text-center
 ---
 
-<div class="absolute inset-0 bg-gradient-to-t from-black/85 to-black/50 z-1"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 to-black/55 z-1"></div>
 
 <div class="relative z-2 flex flex-col items-center justify-center h-full">
 
-<div class="space-y-6 text-3xl font-light">
+<div class="space-y-8 text-3xl font-light">
 
-<p class="text-white/50">Not autocomplete.</p>
+<p class="text-white/40">Not autocomplete.</p>
 
-<p class="text-white/50">Not chaos.</p>
+<p class="text-white/40">Not chaos.</p>
 
-<p class="text-4xl font-semibold text-white mt-4">Teammates.</p>
-
-</div>
-
-<div class="mt-8 text-lg text-white/40 font-light">
-
-Reliable. Accountable. Safe to collaborate with.
+<p class="text-4xl font-semibold text-white mt-2">Teammates.</p>
 
 </div>
+
+<p class="mt-12 text-base text-white/30 font-light tracking-wide">Reliable. Accountable. Safe to collaborate with.</p>
 
 </div>
 
@@ -913,20 +868,22 @@ background: /img/earth-night.jpg
 class: text-center
 ---
 
-<div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/60 to-black/85 z-1"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/65 to-black/90 z-1"></div>
 
 <div class="relative z-2 flex flex-col items-center justify-center h-full">
 
-<div class="max-w-3xl mx-auto space-y-4 text-lg leading-loose font-light">
+<div class="max-w-2xl mx-auto space-y-5 text-lg leading-loose font-light">
 
-<p class="text-white/40">Agents are powerful because they're connected.</p>
-<p class="text-white/40">Reliability comes from environment design.</p>
+<p class="text-white/30">Agents are powerful because they're connected.</p>
+<p class="text-white/30">Reliability comes from environment design.</p>
 
-<p class="text-white/60 mt-4">Isolation defines where agents run.</p>
-<p class="text-white/60">Identity defines what they're allowed to do.</p>
-<p class="text-white/60">Feedback loops define when they're done.</p>
+<div class="my-6"></div>
 
-<p class="text-white text-2xl font-medium mt-6">That's how agents become teammates.</p>
+<p class="text-white/55">Isolation defines where agents run.</p>
+<p class="text-white/55">Identity defines what they're allowed to do.</p>
+<p class="text-white/55">Feedback loops define when they're done.</p>
+
+<p class="text-white text-2xl font-medium mt-8">That's how agents become teammates.</p>
 
 </div>
 
@@ -955,23 +912,15 @@ background: /img/earth-night.jpg
 class: text-center
 ---
 
-<div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/75 to-black/90 z-1"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-black/75 via-black/80 to-black/95 z-1"></div>
 
 <div class="relative z-2 flex flex-col items-center justify-center h-full">
 
-<div class="max-w-3xl mx-auto">
+<div class="max-w-2xl mx-auto">
 
-<div class="text-2xl font-light text-white/70 leading-relaxed">
+<p class="text-xl font-light text-white/60 leading-relaxed">AI doesn't remove responsibility. It <span class="font-semibold text-white">redistributes</span> it.</p>
 
-AI doesn't remove responsibility. It <span class="font-semibold text-white">redistributes</span> it.
-
-</div>
-
-<div class="mt-10 text-3xl font-medium text-emerald-400">
-
-Design it intentionally.
-
-</div>
+<p class="mt-14 text-3xl font-medium text-emerald-400">Design it intentionally.</p>
 
 </div>
 
@@ -995,26 +944,18 @@ background: /img/code-artistic.jpg
 class: text-center
 ---
 
-<div class="absolute inset-0 bg-gradient-to-br from-black/80 via-black/60 to-indigo-900/20 z-1"></div>
+<div class="absolute inset-0 bg-gradient-to-br from-black/85 via-black/65 to-indigo-900/15 z-1"></div>
 
 <div class="relative z-2 flex flex-col items-center justify-center h-full">
 
-<h1 class="!font-light !text-4xl">Thank you</h1>
+<h1 class="!font-light !text-4xl !mb-0">Thank you</h1>
 
-<div class="mt-3 text-lg text-white/50 font-light">
+<p class="mt-4 text-base text-white/40 font-light">Rida Al Barazi · rida.me · @rida</p>
 
-Rida Al Barazi · rida.me · @rida
+<p class="mt-2 text-white/25 text-sm italic font-light">"How can we codify our engineering culture?"</p>
 
-</div>
-
-<div class="mt-2 text-white/30 text-sm italic font-light">
-
-"How can we codify our engineering culture?"
-
-</div>
-
-<div class="grid grid-cols-2 gap-12 mt-8 items-center max-w-xl mx-auto">
-<div class="text-left text-white/30 text-sm space-y-2 font-light">
+<div class="grid grid-cols-2 gap-16 mt-12 items-center max-w-lg mx-auto">
+<div class="text-left text-white/25 text-sm space-y-3 font-light">
 
 <p>BranchBox: github.com/branchbox/branchbox</p>
 <p>Blog: rida.me/blog</p>
@@ -1022,8 +963,8 @@ Rida Al Barazi · rida.me · @rida
 </div>
 <div>
 
-<img src="/feedback-qr.png" class="w-32 h-32 mx-auto rounded-lg opacity-80" alt="Feedback QR" />
-<div class="text-xs text-white/20 mt-2">confoo.ca/f/B1E9…</div>
+<img src="/feedback-qr.png" class="w-28 h-28 mx-auto rounded-xl opacity-70" alt="Feedback QR" />
+<p class="text-[10px] text-white/15 mt-3">confoo.ca/f/B1E9…</p>
 
 </div>
 </div>
