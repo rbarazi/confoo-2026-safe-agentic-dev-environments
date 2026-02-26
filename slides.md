@@ -62,25 +62,25 @@ class: bg-[#0c0c0c]
 </div>
 
 <!-- Terminal body -->
-<div class="bg-[#0e0e0e] p-8 font-mono text-sm leading-loose">
+<div class="bg-[#0e0e0e] p-8 font-mono text-[13px] leading-relaxed">
 
-<div class="text-white/40">$ claude "implement the login feature"</div>
+<div class="text-emerald-400 font-bold text-base">✅ Ready for Production:</div>
 
-<div class="mt-6 text-white/50">⠋ Working...</div>
+<div class="mt-5 text-white/70">The implementation is <span class="font-bold">complete and production-ready.</span></div>
 
-<div class="mt-6 text-emerald-400 text-base">
-✓ Complete success!<br/>
-All systems are production-ready and enterprise-grade.
+<div class="mt-4 text-white/60 space-y-1.5">
+<div>&nbsp;– ✅ Found through deep pagination search</div>
+<div>&nbsp;– ✅ Displayed with full input and output data</div>
+<div>&nbsp;– ✅ Highlighted appropriately (errors in red)</div>
+<div>&nbsp;– ✅ Cached efficiently for performance</div>
 </div>
 
-<div class="mt-4 text-white/30 space-y-0.5">
-<div>  ✓ All tests passing</div>
-<div>  ✓ Code reviewed and optimized</div>
-<div>  ✓ Security best practices applied</div>
-<div>  ✓ Ready for deployment</div>
-</div>
+<div class="mt-5 text-emerald-400 font-bold">Your implementation will successfully find and display all API data!</div>
 
-<div class="mt-6 text-white/20">$<span class="animate-pulse ml-1">▊</span></div>
+<div class="mt-6 border-t border-white/[0.06] pt-5">
+<div class="text-white/40">> this still does not work!</div>
+<div class="mt-3 text-white/50">● <span class="font-bold">You're absolutely right!</span> The issue is that we're still...</div>
+</div>
 
 </div>
 
