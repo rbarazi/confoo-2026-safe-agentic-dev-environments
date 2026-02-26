@@ -127,44 +127,6 @@ class: bg-[#080808]
 
 ---
 layout: cover
-background: /img/dark-abstract.jpg
-class: text-left
----
-
-<div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-transparent z-1"></div>
-
-<div class="relative z-2 max-w-2xl">
-
-<h1 class="!text-[2.5rem] !font-light !leading-snug !mb-0">
-The future of coding agents<br/>
-<span class="!font-semibold">isn't prompt engineering.</span><br/>
-<span class="!font-semibold">It's environment engineering.</span>
-</h1>
-
-<div class="mt-14 text-lg text-white/55 space-y-4 font-light">
-
-<p>Who can <span class="text-emerald-400 font-medium">run</span> what</p>
-<p>Who can <span class="text-amber-400 font-medium">access</span> what</p>
-<p>Who can <span class="text-rose-400 font-medium">approve</span> what</p>
-
-</div>
-
-</div>
-
-<!--
-[Confident. Slow. This is your anchor.]
-
-"The future of coding agents isn't prompt engineering. It's environment engineering."
-
-"And to be clear — this is not a DevOps talk. This is about trust architecture."
-
-"Who can run what. Who can access what. Who can approve what."
-
-"Everything I show you today maps back to those three questions."
--->
-
----
-layout: cover
 background: /img/network-cables.jpg
 class: text-center
 ---
@@ -199,6 +161,46 @@ class: text-center
 "Put those three together and your agent becomes an attack surface. That's not theoretical — that's the actual threat model."
 
 "So how do we make this safe?"
+-->
+
+---
+layout: cover
+background: /img/dark-abstract.jpg
+class: text-left
+---
+
+<div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-transparent z-1"></div>
+
+<div class="relative z-2 max-w-2xl">
+
+<h1 class="!text-[2.5rem] !font-light !leading-snug !mb-0">
+The future of agentic coding<br/>
+<span class="!font-semibold">isn't prompt engineering.</span><br/>
+<span class="!font-semibold">It's environment engineering.</span>
+</h1>
+
+<div class="mt-14 text-lg text-white/65 space-y-6 font-light">
+
+<p><span class="text-emerald-400 font-medium">Isolation</span> — where can agents run?</p>
+<p><span class="text-amber-400 font-medium">Identity</span> — who are they acting as?</p>
+<p><span class="text-rose-400 font-medium">Feedback Loops</span> — when are they done?</p>
+
+</div>
+
+</div>
+
+<!--
+[Confident. Slow. This is your anchor.]
+
+"The future of agentic coding isn't prompt engineering. It's not even context engineering anymore. It's environment engineering."
+
+"Three questions structure everything I'll show you today."
+
+"Isolation — where can agents run?"
+"Identity — who are they acting as?"
+"Feedback loops — when are they done?"
+
+"That's the spine of this talk."
 -->
 
 ---
