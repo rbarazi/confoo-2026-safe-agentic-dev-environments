@@ -65,6 +65,31 @@ class: text-center
 
 <div class="max-w-xl mx-auto">
 
+<p class="text-xl text-white/65 font-light">Your agent can write a feature in 4 minutes.</p>
+
+<p class="text-3xl font-semibold text-amber-400 mt-10">Can you verify it in 4 minutes?</p>
+
+<p class="mt-14 text-base text-white/45 font-light leading-relaxed max-w-md mx-auto">This talk is a practical framework for making agentic coding safe enough for daily development.</p>
+
+</div>
+
+<!--
+[Pivot from YOUR problem to THEIR problem.]
+
+"That's not just my story. Your agent can write a feature in 4 minutes. Can you verify it in 4 minutes?"
+
+"The best engineering teams are as good as their environment allows. That was true before AI."
+
+"This talk is a practical framework for closing that gap."
+-->
+
+---
+layout: center
+class: text-center
+---
+
+<div class="max-w-xl mx-auto">
+
 <p class="text-2xl text-white/65 font-light leading-relaxed">The real bottleneck wasn't the model.</p>
 
 <p class="text-5xl font-semibold text-white mt-12">It was me.</p>
@@ -86,84 +111,6 @@ class: text-center
 -->
 
 ---
-layout: center
-class: text-center
----
-
-<div class="max-w-xl mx-auto">
-
-<p class="text-xl text-white/65 font-light">Your agent can write a feature in 4 minutes.</p>
-
-<p class="text-3xl font-semibold text-amber-400 mt-10">Can you verify it in 4 minutes?</p>
-
-<p class="mt-14 text-base text-white/45 font-light leading-relaxed max-w-md mx-auto">This talk is a practical framework for making agentic coding safe enough for daily development.</p>
-
-</div>
-
-<!--
-[Pivot from YOUR problem to THEIR problem.]
-
-"That's not just my story. Your agent can write a feature in 4 minutes. Can you verify it in 4 minutes?"
-
-"The best engineering teams are as good as their environment allows. That was true before AI."
-
-"This talk is a practical framework for closing that gap."
--->
-
----
-layout: center
-class: bg-[#080808]
----
-
-<img src="/img/harold-10k-lines.jpg" class="mx-auto max-h-[400px] rounded-2xl" />
-
-<!--
-[Let them see it. Let them laugh.]
-
-"That feeling right there? That's what happens when generation outpaces verification."
-
-[Advance immediately to thesis. Don't linger. Don't name the meme.]
--->
-
----
-layout: cover
-background: /img/network-cables.jpg
-class: text-center
----
-
-<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/70 to-black/50 z-1"></div>
-
-<div class="relative z-2">
-
-<h1 class="!font-light !mb-0">The Connected Agent Problem</h1>
-
-<p class="mt-4 text-white/50 text-base font-light">Simon Willison · <span class="text-white/75">"the lethal trifecta"</span></p>
-
-<div class="mt-14 text-xl space-y-6 text-white/75 font-light">
-
-<p>Access to <span class="text-rose-400 font-medium">private data</span></p>
-<p>Exposure to <span class="text-rose-400 font-medium">untrusted content</span></p>
-<p>Ability to <span class="text-rose-400 font-medium">externally communicate</span></p>
-
-</div>
-
-<p class="mt-12 text-white/40 text-sm font-light">Combine all three → your agent becomes an attack surface.</p>
-
-</div>
-
-<!--
-[Shift to architect tone. Calm. Serious.]
-
-"Simon Willison has this framing he calls the lethal trifecta."
-
-"Access to private data. Exposure to untrusted content. And the ability to externally communicate."
-
-"Put those three together and your agent becomes an attack surface. That's not theoretical — that's the actual threat model."
-
-"So how do we make this safe?"
--->
-
----
 layout: cover
 background: /img/dark-abstract.jpg
 class: text-left
@@ -181,9 +128,9 @@ The future of agentic coding<br/>
 
 <div class="mt-14 text-lg text-white/65 space-y-6 font-light">
 
-<p><span class="text-emerald-400 font-medium">Isolation</span> — where can agents run?</p>
-<p><span class="text-amber-400 font-medium">Identity</span> — who are they acting as?</p>
-<p><span class="text-rose-400 font-medium">Feedback Loops</span> — when are they done?</p>
+<p>Who can <span class="text-emerald-400 font-medium">run</span> what</p>
+<p>Who can <span class="text-amber-400 font-medium">access</span> what</p>
+<p>Who can <span class="text-rose-400 font-medium">approve</span> what</p>
 
 </div>
 
@@ -196,11 +143,47 @@ The future of agentic coding<br/>
 
 "Three questions structure everything I'll show you today."
 
-"Isolation — where can agents run?"
-"Identity — who are they acting as?"
-"Feedback loops — when are they done?"
+"Who can run what. Who can access what. Who can approve what."
 
-"That's the spine of this talk."
+"Everything I show you maps back to those three questions."
+-->
+
+---
+layout: cover
+background: /img/network-cables.jpg
+class: text-center
+---
+
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/70 to-black/50 z-1"></div>
+
+<div class="relative z-2">
+
+<h1 class="!font-light !mb-0">The Lethal Trifecta</h1>
+
+<p class="mt-4 text-white/50 text-base font-light">Simon Willison</p>
+
+<div class="mt-14 text-xl space-y-6 text-white/75 font-light">
+
+<p>Access to <span class="text-rose-400 font-medium">private data</span></p>
+<p>Exposure to <span class="text-rose-400 font-medium">untrusted content</span></p>
+<p>Ability to <span class="text-rose-400 font-medium">externally communicate</span></p>
+
+</div>
+
+<p class="mt-12 text-white/40 text-sm font-light">Combine all three → your agent becomes an attack surface.</p>
+
+</div>
+
+<!--
+[Shift to architect tone. Calm. Serious.]
+
+"Simon Willison calls this the lethal trifecta."
+
+"Access to private data. Exposure to untrusted content. And the ability to externally communicate."
+
+"Put those three together and your agent becomes an attack surface. That's not theoretical — that's the actual threat model."
+
+"So how do we make this safe?"
 -->
 
 ---
