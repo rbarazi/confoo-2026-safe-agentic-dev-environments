@@ -92,6 +92,8 @@ class: bg-[#0c0c0c]
 [Say nothing. Let them read it. Hold for 3 full seconds.]
 
 They'll recognize it. Every developer in this room has seen this exact output from their agent.
+
+Source: @steipete (Peter Steinberger) — https://x.com/steipete/status/1966561119608139791
 -->
 
 ---
