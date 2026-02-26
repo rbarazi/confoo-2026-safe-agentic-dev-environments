@@ -565,44 +565,40 @@ class: text-center
 -->
 
 ---
+layout: center
+class: text-center
+---
 
-# Skills = Progressive Disclosure
+<div class="max-w-xl mx-auto">
 
-<div class="mt-12">
+<p class="text-xl text-white/40 font-light">Not just what agents can <span class="text-amber-400 font-medium">access</span>.</p>
 
-<div class="p-8 bg-white/[0.02] rounded-2xl border border-white/[0.05] font-mono text-base text-white/50 leading-loose">
+<p class="text-xl text-white/40 font-light mt-3">What agents are expected to <span class="text-amber-400 font-medium">do</span>.</p>
 
-```
-agents.md          → thin, high-level
-  └── skills/      → loaded on demand
-       ├── deploy/
-       ├── test/
-       └── review/
-```
+<div class="mt-14 space-y-4 text-lg text-white/55 font-light">
 
-</div>
-
-<div class="text-lg mt-10 text-white/60 font-light leading-relaxed">
-
-Only load the <span class="text-emerald-400 font-medium">OAuth skill</span> when you're doing OAuth.<br/>
-Only load the <span class="text-emerald-400 font-medium">Playwright workflow</span> when you're doing E2E.
+<p>How we write tests.</p>
+<p>How we structure PRs.</p>
+<p>How we handle errors.</p>
 
 </div>
 
-<p class="mt-8 text-sm text-white/25 font-light leading-relaxed">I started with Playwright MCP. Now I use Chrome DevTools Protocol directly through a custom skill. The tooling moves fast — the pattern matters more than the tool.</p>
+<p class="mt-14 text-base text-white/25 italic font-light">"People like us do things like this." — Seth Godin</p>
 
 </div>
 
 <!--
-"Another lesson I learned: context gets polluted fast."
+"Identity isn't just a security boundary. It's a culture boundary."
 
-"I had this massive agents.md file. It explained everything. Loaded every time into the context window. Not sustainable."
+"Think about what happens when you onboard a new engineer. You don't just hand them credentials. You teach them how your team works. How you write tests. How you structure PRs. What a good commit message looks like."
 
-"So I moved toward progressive disclosure. Thin core file. Referenced skills. Only load the OAuth testing skill when you're doing OAuth. Only load the Playwright workflow when you're doing E2E."
+"Most teams have never written this stuff down. It lives in code review comments. In Slack threads. In tribal knowledge."
 
-"I started with Playwright MCP for browser testing. Now I'm using Chrome DevTools Protocol — CDP — directly through a custom skill. You literally just run Chrome and open up the protocol, and the agent can control the browser directly. The tooling moves fast — what matters is the pattern, not the specific tool."
+"Configuring an agent forces you to make the implicit explicit. You have to actually articulate: what do we care about here? What does 'done' look like for us?"
 
-"This isn't just context optimization. It's modular architecture for reasoning."
+"Seth Godin has this line: 'People like us do things like this.' That's culture. Not rules — identity. And when you configure an agent's identity, you're answering the same question: what kind of engineering team are we?"
+
+[This plants the seed for the closing line: 'How can we codify our engineering culture?']
 -->
 
 ---
