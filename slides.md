@@ -1,5 +1,5 @@
 ---
-theme: seriph
+theme: dracula
 title: Safe Agentic Coding
 info: |
   Environment Engineering for Reliable AI Teammates
@@ -646,17 +646,10 @@ background: /img/checklist.jpg
 
 </div>
 
-<div class="mt-6 p-4 bg-yellow-900/20 border border-yellow-500/30 rounded-lg text-center text-lg">
-
-Autonomy without verification = chaos.<br/>
-Verification without autonomy = micromanagement.
-
-</div>
-
 </div>
 
 <!--
-[Call back to the opening. This is a key moment.]
+[Call back to the opening.]
 
 "Remember that checklist from the opening? The agent wrote that one. 'Production-ready and enterprise-grade.'"
 
@@ -665,44 +658,88 @@ Verification without autonomy = micromanagement.
 "Done means: the tests pass. The OAuth handshake works end-to-end. The E2E flow completes. The PR is reviewed."
 
 "You wouldn't tell a senior engineer which files to edit. You'd tell them what done looks like."
+-->
 
-[Pause.]
+---
+layout: center
+class: text-center
+---
 
-"Autonomy without verification is chaos. Verification without autonomy is micromanagement. Safe autonomy lives in the middle."
+<div class="max-w-2xl mx-auto space-y-8">
+
+<div class="text-2xl text-red-400">Autonomy without verification = chaos.</div>
+
+<div class="text-2xl text-yellow-400">Verification without autonomy = micromanagement.</div>
+
+<div class="text-3xl font-bold text-green-400 mt-4">Safe autonomy lives in the middle.</div>
+
+</div>
+
+<!--
+[Pause after each line. Let them land separately.]
+
+"Autonomy without verification is chaos." [Beat.]
+
+"Verification without autonomy is micromanagement." [Beat.]
+
+"Safe autonomy lives in the middle."
+
+[Hold. This is the thesis of the entire Feedback Loops section. Then advance.]
 -->
 
 ---
 
 # Self-Validation Loop
 
-<div class="flex justify-center mt-12">
-<div class="space-y-4 text-center">
+<div class="flex justify-center mt-8">
+<div class="relative w-96 h-96">
 
-<div class="text-2xl p-4 bg-red-900/30 rounded-lg">❌ Fail</div>
-<div class="text-3xl">↓</div>
-<div class="text-2xl p-4 bg-yellow-900/30 rounded-lg">🔧 Patch</div>
-<div class="text-3xl">↓</div>
-<div class="text-2xl p-4 bg-blue-900/30 rounded-lg">🔄 Rerun</div>
-<div class="text-3xl">↓</div>
-<div class="text-2xl p-4 bg-green-900/30 rounded-lg">✅ Green</div>
+<!-- Top: Fail -->
+<div class="absolute top-0 left-1/2 -translate-x-1/2 text-xl p-4 bg-red-900/30 rounded-lg border border-red-500/30 text-center w-36">
+❌ Fail
+</div>
+
+<!-- Right: Patch -->
+<div class="absolute top-1/2 right-0 -translate-y-1/2 text-xl p-4 bg-yellow-900/30 rounded-lg border border-yellow-500/30 text-center w-36">
+🔧 Patch
+</div>
+
+<!-- Bottom: Rerun -->
+<div class="absolute bottom-0 left-1/2 -translate-x-1/2 text-xl p-4 bg-blue-900/30 rounded-lg border border-blue-500/30 text-center w-36">
+🔄 Rerun
+</div>
+
+<!-- Left: Green? -->
+<div class="absolute top-1/2 left-0 -translate-y-1/2 text-xl p-4 bg-green-900/30 rounded-lg border border-green-500/30 text-center w-36">
+✅ Green?
+</div>
+
+<!-- Arrows -->
+<div class="absolute top-16 right-12 text-2xl text-gray-500">↘</div>
+<div class="absolute bottom-16 right-12 text-2xl text-gray-500">↙</div>
+<div class="absolute bottom-16 left-12 text-2xl text-gray-500">↖</div>
+<div class="absolute top-16 left-12 text-2xl text-gray-500">↗</div>
+
+<!-- Center label -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm text-gray-500 italic">
+repeat until green
+</div>
 
 </div>
 </div>
 
-<div class="mt-8 text-center text-lg text-gray-400">
+<div class="mt-4 text-center text-lg text-gray-400">
 
-Human reviews only after validation passes.
+Human reviews only after the loop exits green.
 
 </div>
 
 <!--
-"Once the environment supports it, the agent can: fail, patch, rerun, repeat."
+"The agent fails. Patches. Reruns. And if it's still red? Back around. Fail, patch, rerun. Again."
 
-"Now I'm not manually clicking through flows. I'm reviewing outcomes."
+"This isn't a waterfall. It's a loop. The agent keeps going until it's green."
 
-"The agent catches its own regressions. You only see work after it's proven itself."
-
-"Human reviews only after validation passes. That's the deal."
+"Human reviews only after the loop exits. That's the deal."
 -->
 
 ---
