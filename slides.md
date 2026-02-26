@@ -164,53 +164,6 @@ The future of coding agents<br/>
 -->
 
 ---
-background: /img/terminal.jpg
----
-
-<div class="absolute inset-0 bg-gradient-to-b from-black/85 to-black/65 z-1"></div>
-
-<div class="relative z-2">
-
-# Why Web Apps Break Naive Agent Workflows
-
-<div class="grid grid-cols-2 gap-16 mt-12">
-<div>
-
-<div class="space-y-5 text-lg text-white/75 font-light">
-
-- Port collisions
-- Shared localhost state
-- OAuth redirect URLs
-- Webhooks need public endpoints
-
-</div>
-
-</div>
-<div class="flex items-center justify-center">
-
-<div class="text-base text-center p-10 border border-white/8 rounded-2xl bg-white/[0.02]">
-
-<p class="text-white/55 font-light">If you're building a CLI, one env works.</p>
-<p class="text-white font-medium mt-4">Web apps? Isolation is structural.</p>
-
-</div>
-
-</div>
-</div>
-
-</div>
-
-<!--
-"Now — if you're building a Rust CLI, this is easy. Different folder, different binary, done."
-
-"But most of us here are building web systems. Stateful. Networked. Callback-driven."
-
-"OAuth requires a real redirect URL. Webhooks require a public endpoint. You can't just mock everything and pretend that's enough."
-
-"If you want an agent to verify an OAuth flow end-to-end, it has to run against a real, reachable URL. That's when isolation stops being a nice-to-have."
--->
-
----
 layout: cover
 background: /img/network-cables.jpg
 class: text-center
@@ -295,6 +248,53 @@ layout: section
 
 <!--
 [Transition. Keep it moving.]
+-->
+
+---
+background: /img/terminal.jpg
+---
+
+<div class="absolute inset-0 bg-gradient-to-b from-black/85 to-black/65 z-1"></div>
+
+<div class="relative z-2">
+
+# Why Web Apps Break Naive Agent Workflows
+
+<div class="grid grid-cols-2 gap-16 mt-12">
+<div>
+
+<div class="space-y-5 text-lg text-white/75 font-light">
+
+- Port collisions
+- Shared localhost state
+- OAuth redirect URLs
+- Webhooks need public endpoints
+
+</div>
+
+</div>
+<div class="flex items-center justify-center">
+
+<div class="text-base text-center p-10 border border-white/8 rounded-2xl bg-white/[0.02]">
+
+<p class="text-white/55 font-light">If you're building a CLI, one env works.</p>
+<p class="text-white font-medium mt-4">Web apps? Isolation is structural.</p>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+<!--
+"Now — if you're building a Rust CLI, this is easy. Different folder, different binary, done."
+
+"But most of us here are building web systems. Stateful. Networked. Callback-driven."
+
+"OAuth requires a real redirect URL. Webhooks require a public endpoint. You can't just mock everything and pretend that's enough."
+
+"If you want an agent to verify an OAuth flow end-to-end, it has to run against a real, reachable URL. That's when isolation stops being a nice-to-have."
 -->
 
 ---
