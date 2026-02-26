@@ -48,7 +48,9 @@ layout: center
 class: bg-[#0c0c0c]
 ---
 
-<img src="/img/steipete-production-ready.jpg" class="mx-auto max-h-[480px] rounded-xl shadow-2xl border border-white/[0.08]" />
+<img src="/img/steipete-production-ready.jpg" class="mx-auto max-h-[440px] rounded-xl shadow-2xl border border-white/[0.08]" />
+
+<p class="text-center text-white/30 text-xs mt-4 font-light">Credit: Peter Steinberger (@steipete)</p>
 
 <!--
 [Let them read it. 3 full seconds of silence.]
