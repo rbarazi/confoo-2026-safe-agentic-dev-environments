@@ -51,11 +51,17 @@ class: bg-[#0c0c0c]
 <img src="/img/steipete-production-ready.jpg" class="mx-auto max-h-[480px] rounded-xl shadow-2xl border border-white/[0.08]" />
 
 <!--
-[Say nothing. Let them read it. Hold for 3 full seconds.]
+[Let them read it. 3 full seconds of silence.]
 
-They'll recognize it. Every developer in this room has seen this exact output from their agent.
+"Show of hands — who's received this message from their AI agent?"
 
-Source: @steipete (Peter Steinberger) — https://x.com/steipete/status/1966561119608139791
+[Hands go up. Smile.]
+
+"Production ready? Clearly it was not."
+
+"And the best part — scroll down — it gaslights you too. 'You're absolutely right!' Thank you, I appreciate the validation."
+
+[Let them laugh. Don't rush past this.]
 -->
 
 ---
@@ -74,11 +80,9 @@ class: text-center
 </div>
 
 <!--
-[Pivot from YOUR problem to THEIR problem.]
+"Yes, great, the AI agent can write a feature in 4 minutes. It's doing the fun part — writing the code — and leaving the verification to us."
 
-"That's not just my story. Your agent can write a feature in 4 minutes. Can you verify it in 4 minutes?"
-
-"The best engineering teams are as good as their environment allows. That was true before AI."
+"So now you're the QA person. Clicking around. Trying to verify everything. Noticing it wasn't really done in the first place. Copy-pasting error messages back for it to fix. Or should I say, for it to gaslight me that I'm right?"
 
 "This talk is a practical framework for closing that gap."
 -->
@@ -97,55 +101,17 @@ class: text-center
 </div>
 
 <!--
-[This is YOUR story. Personal. Vulnerable.]
+[Slow. This is the turn.]
 
-"I've been working with coding agents for about a year now. Real features. Real APIs. Real OAuth flows."
+"So the obvious answer is: let the agent do all the work. Why am I the bottleneck?"
 
-"And this kept happening. The agent finishes. I open the browser. OAuth redirect broken. Webhook not firing. Four working components that didn't work together."
+"Give it access to a browser. Give it access to logs. To the database. To everything. Let it verify its own work."
 
-"The model wasn't the bottleneck."
+[Pause. Lean in.]
 
-[Pause.]
+"What could go wrong?"
 
-"I was. I had become the slow QA person. The agent did the fun part — writing the code. And I was the one clicking through the app after every change, copy-pasting errors back, getting frustrated."
--->
-
----
-layout: cover
-background: /img/dark-abstract.jpg
-class: text-left
----
-
-<div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-transparent z-1"></div>
-
-<div class="relative z-2 max-w-2xl">
-
-<h1 class="!text-[2.5rem] !font-light !leading-snug !mb-0">
-The future of agentic coding<br/>
-<span class="!font-semibold">isn't prompt engineering.</span><br/>
-<span class="!font-semibold">It's environment engineering.</span>
-</h1>
-
-<div class="mt-14 text-lg text-white/65 space-y-6 font-light">
-
-<p>Who can <span class="text-emerald-400 font-medium">run</span> what</p>
-<p>Who can <span class="text-amber-400 font-medium">access</span> what</p>
-<p>Who can <span class="text-rose-400 font-medium">approve</span> what</p>
-
-</div>
-
-</div>
-
-<!--
-[Confident. Slow. This is your anchor.]
-
-"The future of agentic coding isn't prompt engineering. It's not even context engineering anymore. It's environment engineering."
-
-"Three questions structure everything I'll show you today."
-
-"Who can run what. Who can access what. Who can approve what."
-
-"Everything I show you maps back to those three questions."
+[Hold 2 seconds. Then advance to lethal trifecta.]
 -->
 
 ---
@@ -175,15 +141,51 @@ class: text-center
 </div>
 
 <!--
-[Shift to architect tone. Calm. Serious.]
-
 "Simon Willison calls this the lethal trifecta."
 
-"Access to private data. Exposure to untrusted content. And the ability to externally communicate."
+"Access to private data. Exposure to untrusted content. The ability to externally communicate."
 
-"Put those three together and your agent becomes an attack surface. That's not theoretical — that's the actual threat model."
+"Combine all three and your agent becomes an attack surface. That's not theoretical. That's exactly what we just described — giving the agent access to everything."
 
-"So how do we make this safe?"
+[Brief. Don't dwell. The audience gets it. Advance.]
+-->
+
+---
+layout: cover
+background: /img/dark-abstract.jpg
+class: text-left
+---
+
+<div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-transparent z-1"></div>
+
+<div class="relative z-2 max-w-2xl">
+
+<h1 class="!text-[2.5rem] !font-light !leading-snug !mb-0">
+The future of agentic coding<br/>
+<span class="!font-semibold">isn't prompt engineering.</span><br/>
+<span class="!font-semibold">It's environment engineering.</span>
+</h1>
+
+<div class="mt-14 text-lg text-white/65 space-y-6 font-light">
+
+<p><span class="text-emerald-400 font-medium">Where</span> can they operate</p>
+<p><span class="text-amber-400 font-medium">Who</span> are they</p>
+<p><span class="text-rose-400 font-medium">When</span> are they done</p>
+
+</div>
+
+</div>
+
+<!--
+"So how do we give agents real access without the lethal trifecta?"
+
+"The future of agentic coding isn't prompt engineering. It's not even context engineering anymore. It's environment engineering."
+
+"Where can they operate. Who are they. When are they done."
+
+"Three questions. Everything I show you maps back to these three."
+
+[Advance to the three pillars.]
 -->
 
 ---
@@ -216,9 +218,9 @@ class: text-center
 </div>
 
 <!--
-"Three structural controls. Isolation prevents interference. Identity limits blast radius. Feedback loops prove correctness."
+"Where maps to Isolation — prevents interference. Who maps to Identity — limits blast radius. When maps to Feedback Loops — proves correctness."
 
-"These are not prompt tweaks. These are architectural decisions. Everything I show you from here maps to one of these three."
+"These are not prompt tweaks. These are architectural decisions."
 -->
 
 ---
